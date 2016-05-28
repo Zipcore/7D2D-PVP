@@ -1,4 +1,4 @@
-s,Source,Context,Max Line Width,English,Francais,German
+﻿s,Source,Context,Max Line Width,English,Francais,German
 quest,,Category,,Quest,,
 challenge,,Category,,Challenge,,
 treasure,,Category,,Treasure,,
@@ -141,3 +141,5 @@ treasure_sarah_subtitle,,Challenge Info,,Sarah's Treasure Map,,
 treasure_raphael,,,,Raphael's Treasure Map,,
 treasure_raphael_offer,,Challenge Info,,"Dear Stranger,\nI've got the cold sweats and it won't be long. All I can think of in my final hour is if my son Joey is still alive. I have no reason to trust you but I have no choice. Crazy Jake has kidnapped him. In your hand is a map to one of my many secret supply caches. Promise me if you find it you'll help my son.\n\nI'm counting you Raphael",,
 treasure_raphael_subtitle,,Challenge Info,,Raphael's Treasure Map,,
+requirementGroupBow,,Requirement Group,,Holding Bow,,
+requirementGroupCrossbow,,Requirement Group,,Holding Crossbow,,

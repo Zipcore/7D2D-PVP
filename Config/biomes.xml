@@ -218,6 +218,7 @@ Description of Options:
 			<decoration type="block" blockname="cntTreeStump" prob="0.001" rotatemax="7"/>
 			<decoration type="block" blockname="treeSnowyDeadBush" prob ="0.005" rotatemax="7"/>
 			<decoration type="block" blockname="treeSnowyGrassDiagonal" prob =".1" />
+			<decoration type="block" blockname="cntSuspiciousStump" prob="0.00012" rotatemax="7"/>
 		</decorations>
 		<terrain class="Mountains" />
 	</biome>
@@ -263,6 +264,7 @@ Description of Options:
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="3" blockname="bedrock" />
 		</layers>
@@ -292,6 +294,7 @@ Description of Options:
 			<decoration type="block" blockname="treeMaple16m" prob="0.0011" rotatemax="7"/>
 			<decoration type="block" blockname="treeMaple17m" prob="0.0012" rotatemax="7"/>
 			<decoration type="block" blockname="treeTallGrassDiagonal" prob =".5" />
+			<decoration type="block" blockname="cntSuspiciousStump" prob="0.00012" rotatemax="7"/>
 		</decorations>
 		<terrain class="Forest" />
 	</biome>
@@ -354,6 +357,7 @@ Description of Options:
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="3" blockname="bedrock" />
 		</layers>
@@ -379,6 +383,7 @@ Description of Options:
 			<decoration type="block" blockname="treeMountainPineDry" prob="0.002" rotatemax="7"/>
 			<decoration type="block" blockname="treeMountainPine20m" prob="0.004" rotatemax="7"/>
 			<decoration type="block" blockname="treeTallGrassDiagonal" prob =".4" />
+			<decoration type="block" blockname="cntSuspiciousStump" prob="0.00012" rotatemax="7"/>
 		</decorations>
 		<terrain class="Mountains" />
 	</biome>
@@ -453,6 +458,7 @@ Description of Options:
 				<decoration type="block" blockname="lootPlains" prob="0.00025"/>
 				<decoration type="block" blockname="cntBirdnest" prob ="0.007" />
 				<decoration type="block" blockname="treePlainsGrassDiagonal" prob ="0.3" />
+				<decoration type="block" blockname="cntSuspiciousStump" prob="0.00006" rotatemax="7"/>
 			</decorations>
 		</subbiome>
 		<layers>
@@ -637,10 +643,12 @@ Description of Options:
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="*" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -754,6 +762,7 @@ Description of Options:
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -761,6 +770,7 @@ Description of Options:
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="*" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -861,6 +871,7 @@ Description of Options:
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -868,6 +879,7 @@ Description of Options:
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="*" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -922,6 +934,7 @@ Description of Options:
 				<resource blockname="coalOre" cluster="1" prob="0.01" />
 				<resource blockname="potassiumNitrate" cluster="2" prob="0.01" />
 				<resource blockname="leadOre" cluster="2" prob="0.01" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" />
@@ -957,6 +970,7 @@ Description of Options:
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="20" blockname="stone" >
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -965,6 +979,7 @@ Description of Options:
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -1025,6 +1040,7 @@ Description of Options:
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="coalOre" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -1033,6 +1049,7 @@ Description of Options:
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="*" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -1090,6 +1107,8 @@ Description of Options:
 			<decoration type="block" blockname="rock01" prob=".004" rotatemax="3"/>
 			<decoration type="block" blockname="campfire" prob=".00004" rotatemax="3"/>
 			<decoration type="block" blockname="cntApacheArtifactChest" prob=".00001" rotatemax="3"/>
+			<decoration type="block" blockname="cntDeadMiner" prob="0.004" rotatemax="7"/>
+			<decoration type="block" blockname="oilRefiner" prob =".00083" rotatemax="3"/>
 		</decorations>
 	</biome>
 	

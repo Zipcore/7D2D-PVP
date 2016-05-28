@@ -195,7 +195,7 @@
 			<sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{IsAssembleLocked}" pos="14,-14" foregroundlayer="true" />
 		</rect>
 	</required_item_stack>
-	
+
 	<creative_stack>
 		<rect controller="CreativeStack" style="itemStack, hover, scroll">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" />	
@@ -322,6 +322,7 @@
 			<sprite name="background" color="[darkGrey]" height="46" width="1125" pos="-2,2" type="sliced" />
 			<rect depth="1" name="steamId" width="154" height="43" pos="0,0" color="[darkGrey]" type="sliced">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="160" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[black]" type="sliced" />
 				
 				<label depth="1" name="steamIdText" pos="0,-10" width="150" height="28" text="" font_size="26" justify="center"/>
 			</rect>
@@ -334,6 +335,7 @@
 			
 			<rect depth="1" name="playerKills" width="70" height="43" pos="230,0" color="[darkGrey]" type="sliced">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="76" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[black]" type="sliced" />
 				
 				<label depth="1" name="playerKillsText" pos="0,-10" height="28" text="" font_size="26" justify="center"/>
 			</rect>
@@ -346,6 +348,7 @@
 			
 			<rect depth="1" name="level" width="80" height="43" pos="376,0" color="[darkGrey]" type="sliced">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="86" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[black]" type="sliced" />
 				
 				<label depth="1" name="levelText" pos="0,-10" height="28" text="" font_size="26" justify="center"/>
 			</rect>
@@ -358,6 +361,7 @@
 			
 			<rect depth="1" name="ping" width="60" height="43" pos="542,0" color="[darkGrey]" type="sliced">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="66" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[black]" type="sliced" />
 				
 				<label depth="1" name="pingText" pos="0,-10" height="28" text="" font_size="26" justify="center"/>
 			</rect>
@@ -371,6 +375,7 @@
 			
 			<rect depth="1" name="allies" width="80" height="43" pos="708,0" color="[darkGrey]" type="sliced">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="86" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[black]" type="sliced" />
 				
 				<label depth="1" name="sendInvite" pos="0,0" width="30" height="40" text="+" font_size="40" justify="center" on_hover="true" style="press" sound="[craft_click]"/>
 				<label depth="1" name="removeInvite" pos="40,0" width="30" height="40" text="-" font_size="40" justify="center" on_hover="true" style="press" sound="[craft_click]"/>
@@ -384,6 +389,7 @@
 			
 			<rect depth="1" name="map" width="80" height="43" pos="874,0" color="[darkGrey]" type="sliced">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="86" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[black]" type="sliced" />
 				
 				<label depth="1" name="labelShowOnMap" pos="0,-12" height="28" text="SHOW" font_size="26" justify="center" on_hover="true" style="press" sound="[craft_click]"/>
 			</rect>
@@ -397,6 +403,7 @@
 			
 			<rect depth="1" name="km" width="80" height="43" pos="1040,0" color="[darkGrey]" type="sliced">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="86" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[black]" type="sliced" />
 				
 				<label depth="1" name="labelDistanceWalked" pos="0,-10" height="28" text="12 KM" font_size="26" justify="center"/>
 			</rect>
@@ -466,9 +473,11 @@
 			<sprite depth="1" color="{RowStateColor}" sprite="{RowStateSprite}" width="644"  height="45" type="sliced" />
 			
 			<sprite depth="2" sprite="{GroupIcon}" style="icon32px" pos="6, -3" color="{StatusColor}" foregroundlayer="true"/>
+
 			
 			<sprite depth="3" pos="0,-39" height="3" width="640" color="[lightGrey]" foregroundlayer="true" visible="{SkillPercentShouldShow}" type="sliced" />
 			<sprite depth="3" pos="0,-39" height="3" width="640" color="[red]" foregroundlayer="true" type="filled" fill="{SkillPercentThisLevel}" visible="{SkillPercentShouldShow}" />
+
 			
 			<label width="386" pos="44,-7" depth="2" text="{GroupName}" color="{StatusColor}"/>
 			

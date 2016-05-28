@@ -447,5 +447,23 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 <buff id="radiation" type="sickness" buffif="radiation greater 0" debuffif="radiation equals 0" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip">
 </buff>
+	<buff id="medicalsplint" overrides="brokenLeg,sprainedLeg" name="Splint" type="speedmodifier" overrideicon="true" description="Your leg is splinted." icon="buff_icon_splint">
+		<modify id="0" stat="speedmodifier" setValue="0.60,0.80"/>
+		<modify id="1" buff="brokenLeg" tickrate="20"/>
+		<modify id="2" buff="sprainedLeg" tickrate="20"/>
+	</buff>
 
+	<buff id="Resistance" duration="60" type="healthup;staminaup" name="Berserk" description="KILL." onexpired="sideeffect" icon="buff_icon_medicine">
+		<modify id="0" stat="stamina" amount="20" rate="1"/>
+		<modify id="1" stat="health" amount="20" rate="1"/>
+
+</buff>
+	<buff id="sideeffect" duration="10" name="Crashing" type="speedmodifier" description="You're crashing hard." icon="buff_icon_stunned">
+		<modify id="0" stat="speedmodifier" setValue="0.1"/>
+	</buff>	
+	<buff id="AcidSplash" stack="stack" stacklimit="2" hitmask="head;body" debuffif="+water > 1" ffcheck="true" name_key="burningSmall" description_key="burningSmallDesc" tooltip_key="burningSmallTooltip" cures="bottledWater" actions="attach(ParticleEffects/p_signal_flareprefab, @impact);damage(6,5,50,8)" icon="ui_game_symbol_fire"/>
+	<buff id="WellnessLoss" duration="2" type="sickness" actions="increment(@wellness, -5, 0, 1, 1)" name_key="Madness" tooltip_key="This can't be real..." description_key="Surviving in this world is slowly eating away at your sanity." icon="ui_game_symbol_food_poisoning">
+        <modify id="0" stat="stamina" amount="-3" rate="1"/>
+        <modify id="0" stat="speedmodifier" setValue="0.40"/>
+    </buff>	
 </buffs>
