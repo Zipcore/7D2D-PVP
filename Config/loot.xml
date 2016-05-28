@@ -1486,47 +1486,168 @@
 		<item group="tools"/>
 	</lootgroup>
 	
-	<lootgroup name="SupplyCrate" count="all">
-		<item name="forgedIron" count="5,20" prob="0.3"/>
-		<item name="forgedSteel" count="2,10" prob="0.3"/>
-		
-		<item name="tnt" count="2,10" prob="0.1"/>
-		<item name="mineCandyTin" count="1,3" prob="0.04"/>
-		<item name="mineHubcap" count="1,3" prob="0.04"/>
-		<item name="mineAirFilter" count="1,3" prob="0.04"/>
-		<item name="rScrapIronPlateMine" count="1,3" prob="0.01"/>
-		
-		<item group="books" count="1,3" prob="0.3"/>
-		
-		<item name="sewingKit" prob="0.3"/>
-		
-		<item name="ductTape" count="1,3" prob="0.3"/>
-		<item group="automotive" count="1,3" prob="0.3"/>
-		
-		<item group="airdropMedicine" count="1" prob="0.3"/>
-		
-		<item name="bottledWater" count="3,10" prob="0.3"/>
-		<item name="foodHoney" prob="0.3"/>
-		
-		<item group="cannedfood" count="2,3" prob="0.3"/>
-		
-		<item name="seedPack" count="2,3" prob="0.3"/>
-		
-		<item name="woodFrameBlock" count="10,50" prob="0.3"/>
-		<item name="carpenterKit" count="10,60" prob="0.3"/>
-		
-		<item name="rebarFrameBlock" count="10,30" prob="0.3"/>
-		<item name="concreteMix" count="10,30" prob="0.3"/>
-		
-		<item name="flashlight02" prob="0.3"/>
-		
-		<item group="militaryguns+ammo" count="1" prob="0.3"/>
-		<item group="militaryWeaponParts" count="2,3" prob="0.3"/>
-		
+	<lootgroup name="AirdropMedics">
+		<item name="firstAidBandage" count="1,2"/>
+		<item name="disinfectantBandage" count="1,2"/>
+		<item name="medicalSplint" count="1,2"/>
+		<item name="bloodDrawKit" count="1,2"/>
+		<item name="bloodBag" count="1,3"/>
+		<item name="vitamins" count="1,3"/>
+		<item name="purificationTablets" count="1,3"/>
+		<item name="drinkHealth" count="1,3"/>
+		<item name="firstAidKit" count="1,2"/>
+		<item name="painkillers" count="1,2"/>
+		<item name="antibiotics" count="1,2"/>
+		<item name="beaker" count="1"/>
+		<item name="expMedicine" count="1"/>
+		<item name="expScience" count="1"/>
 	</lootgroup>
 	
-<lootcontainer id="34" count="1" size="8,4" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="baseTemplate">
-    	<item group="SupplyCrate"/>
+	<lootgroup name="AirdropFood">
+		<item name="militaryRation" count="2,3"/>
+		<item name="flour" count="3,6"/>
+		<item name="biscuit" count="3,6"/>
+		<item name="bowlFruit" count="1,2"/>
+		<item name="mealBreakfast" count="1,2"/>
+		<item name="mealDinner" count="1,2"/>
+	</lootgroup>
+	
+	<lootgroup name="AirdropDrinks">
+		<item name="waterPurified" count="1,3"/>
+		<item name="meadBlueberry" count="1,2"/>
+		<item name="appleCider" count="1,2"/>
+		<item name="drinkEnergy" count="1,3"/>
+		<item name="beer" count="1,3"/>
+		<item name="coldgoldenRodTea" count="1,2"/>
+		<item name="coldredTea" count="1,2"/>
+	</lootgroup>
+	
+	<lootgroup name="AirdropGoods">
+		<item name="rebarFrameBlock" count="10,30"/>
+		<item name="concreteMix" count="10,30"/>
+		<item name="woodFrameBlock" count="10,50"/>
+		<item name="carpenterKit" count="10,60"/>
+		<item name="Clingwrap" count="1,3"/>
+		<item name="glue" count="2,6"/>
+		<item name="ductTape" count="2,6"/>
+		<item name="headlight" count="1"/>
+		<item name="scrapCable" count="1,2"/>
+		<item name="spring" count="2,6"/>
+		<item name="hubcap" count="1,3"/>
+		<item name="airFilter" count="1,3"/>
+		<item name="candyTin" count="1,3"/>
+		<item name="forgedIron" count="8,40"/>
+		<item name="forgedSteel" count="5,20"/>
+		<item name="calipers" count="1"/>
+		<item name="toolAndDieSet" count="1"/>
+		<item name="casinoCoin" count="50,300"/>
+		<item name="carBattery" count="1"/>
+		<item name="smallEngine" count="1"/>
+		<item name="seedPack" count="3,5"/>
+		<item name="repairKit" count="1,2"/>
+		<item name="partsAuger_parts" count="1"/>
+		<item name="partsAuger_blade" count="1"/>
+		<item name="partsChainsaw_parts" count="1"/>
+		<item name="partsChainsaw_blade" count="1"/>
+		<item name="partsHandlebars" count="1"/>
+		<item name="smallEngine" count="1"/>
+	</lootgroup>
+	
+	<lootgroup name="AirdropWeapons">
+		<item name="flashlight02"/>
+		<item name="parts44Magnum_cylinder"/>
+		<item name="parts44Magnum_frame"/>
+		<item name="parts44Magnum_grip"/>
+		<item name="parts44Magnum_parts"/>
+		<item name="partsMP5_barrel"/>
+		<item name="partsMP5_stock"/>
+		<item name="partsMP5_receiver"/>
+		<item name="partsMP5_parts"/>
+		<item name="partsAK47_barrel"/>
+		<item name="partsAK47_stock"/>
+		<item name="partsAK47_receiver"/>
+		<item name="partsAK47_parts"/>
+		<item name="partsSniperRifle_barrel"/>
+		<item name="partsSniperRifle_stock"/>
+		<item name="partsSniperRifle_receiver"/>
+		<item name="partsSniperRifle_parts"/>
+		<item name="partsRocketLauncher_barrel"/>
+		<item name="partsRocketLauncher_stock"/>
+		<item name="partsRocketLauncher_receiver"/>
+		<item name="partsRocketLauncher_parts"/>
+		<item name="bulletTumbler"/>
+		<item name="gunSilencer"/>
+		<item name="gunScope"/>
+		<item name="gunChoke"/>
+		<item name="steelArrow" count="5,16"/>
+		<item name="9mmBullet" count="5,16"/>
+		<item name="9mmBulletHP" count="5,16"/>
+		<item name="shotgunShell" count="15,36"/>
+		<item name="shotgunSlug" count="15,25"/>
+		<item name="SiegeShell" count="10,15"/>
+		<item name="lokiShell" count="10,15"/>
+		<item name="10mmBullet" count="25,40"/>
+		<item name="10mmBulletHP" count="20,25"/>
+		<item name="44MagBullet" count="5,20"/>
+		<item name="762mmBullet" count="5,20"/>
+		<item name="762mmBulletHP" count="5,15"/>
+		<item name="rocket" count="3,4"/>
+	</lootgroup>
+	
+	<lootgroup name="AirdropExplosives">
+		<item name="tnt" count="2,6"/>
+		<item name="mineCandyTin" count="1,3"/>
+		<item name="mineHubcap" count="1,3"/>
+		<item name="mineAirFilter" count="1,3"/>
+		<item name="rScrapIronPlateMine" count="1,2"/>
+	</lootgroup>
+	
+	<lootgroup name="AirdropBonus">
+		<item name="qc_silenceofthelambs"/>
+		<item name="qc_drunkanddisorderly"/>
+		<item name="qc_nurseyoubacktohealth"/>
+		<item name="qc_copanattitude"/>
+		<item name="qc_dogdaysareover"/>
+		<item name="qc_itsbitsyspider"/>
+		<item name="qc_ladykiller"/>
+		<item name="qc_maneater"/>
+		<item name="qc_imalumberjackandimokay"/>
+		<item name="qc_yournothingspecial"/>
+		<item name="qc_killthewabbit"/>
+		<item name="qc_nailsomechicks"/>
+		<item name="qc_thatlldopig"/>
+		<item name="qc_stagparty"/>
+		<item name="qc_dontfeedthebears"/>
+		<item name="qc_buythefarm"/>
+		<item name="challengeSticky"/>
+		<item name="challengeBigBadBosses"/>
+		<item name="challengeAnkleBitters"/>
+		<item name="challengeAnimalTraps"/>
+		<item name="challengeLightThemUp"/>
+		<item name="challengeDogEatDog"/>
+		<item name="challengeFeedTheMole"/>
+		<item name="challengeTakingNote"/>
+		<item name="qt_taylor"/>
+		<item name="qt_nickole"/>
+		<item name="qt_stephan"/>
+		<item name="qt_jennifer"/>
+		<item name="qt_claude"/>
+		<item name="qt_sarah"/>
+		<item name="qt_raphael"/>
+	</lootgroup>
+	
+	<lootgroup name="AirdropLoot" count="all">
+		<item group="AirdropMedics" count="1,3"/>
+		<item group="AirdropFood" count="1,4"/>
+		<item group="AirdropDrinks" count="1,2"/>
+		<item group="AirdropGoods" count="1,3" prob="0.8"/>
+		<item group="AirdropWeapons" count="2,3" prob="0.6"/>
+		<item group="AirdropExplosives" count="1,2" prob="0.5"/>
+		<item group="AirdropBonus" count="1" prob="0.4"/>
+	</lootgroup>
+	
+<lootcontainer id="34" count="1" size="8,6" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="baseTemplate">
+	<item group="AirdropLoot"/>
 </lootcontainer>
 
 <!-- lootcontainer 35 tree hollowed stump, place where people stash things, -->
