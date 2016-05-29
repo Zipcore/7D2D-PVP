@@ -474,7 +474,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="stamina" amount="-5" rate="1"/>
 </buff>	 
 <buff id="speedBoost" duration="180" name_key="speedBoost" stack="reset" description_key="speedBoostDesc" tooltip_key="speedBoostTooltip" icon="ui_game_symbol_run">
-<modify id="0" stat="speedmodifier" modifyMaxValue="2.01"/>
-<modify id="1" stat="speedmodifier" modifyValue="1.3"/>
+<modify id="0" stat="speedmodifier" modifyMaxValue="1.31"/>
+<modify id="1" stat="speedmodifier" modifyValue="1.15"/>
 </buff> 
 </buffs>
