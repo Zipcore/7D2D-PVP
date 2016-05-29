@@ -41,6 +41,7 @@
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
+			<window name="windowToolsCementMixer" />
 		</window_group>		
 		
 		<window_group name="workstation_workbench" controller="XUiC_WorkstationWindowGroup">
@@ -216,6 +217,22 @@
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_workstationDecor" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<window name="windowToolsDecorWorkbench" />
+		</window_group>
+		<window_group name="workstation_workstationChemistry" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsChemistry" />
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>

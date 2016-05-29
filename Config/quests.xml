@@ -364,8 +364,8 @@
 	<!-- Miner -->
 	<quest id="challenge_miner1" group_name_key="quest_miner" name="Miner Quest 1/3" subtitle="Mining Challenge 1" description="Bust some rocks" icon="ui_game_symbol_forge" 
 		repeatable="false" category_key="challenge" offer="So we hear you want to be a miner.  A real miner knows how to bust some rocks.  Go break some boulders and show us you can handle the job." difficulty="easy">
-		<objective type="FetchKeep" id="rockSmall" value="300" />
-		<objective type="FetchKeep" id="scrapIron" value="150" />
+		<objective type="FetchKeep" id="rockSmall" value="150" />
+		<objective type="FetchKeep" id="scrapIron" value="50" />
 		<reward type="Skill" id="Mining Tools" value="1" />
 		<reward type="Item" id="dynamite" value="5" />
 		<reward type="Quest" id="challenge_miner2" />
@@ -373,22 +373,22 @@
 	
 		<quest id="challenge_miner2" group_name_key="quest_miner" name="Miner Quest 2/3" subtitle="Mining Challenge 2" description="Keep breaking those rocks" icon="ui_game_symbol_forge" 
 		repeatable="false" category_key="challenge" offer="You did ok breaking those rocks, now lets see how well you can find ore buried in the ground.  That TNT should help you get started." difficulty="medium">
-		<objective type="FetchKeep" id="rockSmall" value="1000" />
-		<objective type="FetchKeep" id="scrapIron" value="1000" />
-		<objective type="FetchKeep" id="scrapLead" value="250" />
-		<objective type="FetchKeep" id="coal" value="250" />
-		<objective type="FetchKeep" id="potassiumNitratePowder" value="250" />
+		<objective type="FetchKeep" id="rockSmall" value="300" />
+		<objective type="FetchKeep" id="scrapIron" value="150" />
+		<objective type="FetchKeep" id="scrapLead" value="100" />
+		<objective type="FetchKeep" id="coal" value="100" />
+		<objective type="FetchKeep" id="potassiumNitratePowder" value="100" />
 		<reward type="Skill" id="Mining Tools" value="2" />
-		<reward type="Item" id="pickaxeIron" value="300" />
+		<reward type="Item" id="clawHammer" value="300" />
 		
 		<reward type="Quest" id="challenge_miner3" />
 	</quest>
 	
 		<quest id="challenge_miner3" group_name_key="quest_miner" name="Miner Quest 3/3" subtitle="Mining Challenge 3" description="Almost done, now make some cobblestone" icon="ui_game_symbol_forge" 
 		repeatable="false" category_key="challenge" offer="A miner knows how to work with stone.  Cobblestone will provide great protection.  Go make us a bunch and show us how its done." difficulty="hard">
-		<objective type="FetchKeep" id="rockSmall" value="3000" />
-		<objective type="FetchKeep" id="clayLump" value="3000" />
-		<objective type="Craft" id="cobblestones" value="255" />
+		<objective type="FetchKeep" id="rockSmall" value="1000" />
+		<objective type="FetchKeep" id="clayLump" value="1000" />
+		<objective type="Craft" id="cobblestones" value="200" />
 		<reward type="Skill" id="Mining Tools" value="3" />
 		<reward type="Item" id="pickaxeSteel" value="300-400" />
 		</quest>
@@ -436,8 +436,8 @@
 		<reward type="Quest" id="challenge_animaltrap" />
 	</quest>
 	
-	<quest id="challenge_animaltrap" group_name_key="quest_hunter" name="Animal Trapping Quest" subtitle="Animal Trapping Challenge" description="Capture some animals." icon="ui_game_symbol_archery" 
-		repeatable="false" category_key="challenge" offer="Craft,place and bait some animal snares and chicken coops with animal feed.  " difficulty="easy">
+	<quest id="challenge_animaltrap" group_name_key="quest_hunter" name="Animal Trapping Quest" subtitle="Animal Trapping Challenge" description="Craft and place and bait some animal snares and chicken coops. (Requires Animal Trap knowledge)" icon="ui_game_symbol_archery" 
+		repeatable="false" category_key="challenge" offer="Craft and place and bait some animal snares and chicken coops. (Requires Animal Trap knowledge)" difficulty="easy">
 		<action type="TrackQuest" />
 		<objective type="Craft" id="animalSnare" value="3" />
 		<objective type="BlockPlace" id="animalSnare" value="3" />
@@ -534,7 +534,7 @@
 		repeatable="false" category_key="challenge" offer="You've survived IED's and MRE's, what are a few zombies?" difficulty="easy">
 		<requirement type="Holding" id="gunAK47" />
 		<objective type="ZombieKill" value="25" />
-		<reward type="Item" id="762mmBullet" value="25" />
+		<reward type="Item" id="762mmBullet" value="50" />
 		<reward type="Skill" id="Rifles" value="1" />
 		<reward type="Quest" id="challenge_veteran2" />
 	</quest>
@@ -545,7 +545,7 @@
 		<objective type="ZombieKill" value="50" />
 		
 		<reward type="Skill" id="Rifles" value="3" />
-		<reward type="Item" id="762mmBullet" value="50" />
+		<reward type="Item" id="762mmBullet" value="75" />
 		<reward type="Quest" id="challenge_veteran3" />
 	</quest>
 	
@@ -553,7 +553,7 @@
 		repeatable="false" category_key="challenge" offer="Show those zombie's whose boss, treat em to a lead enema." difficulty="Hard">
 		<requirement type="Holding" id="gunAK47" />
 		<objective type="ZombieKill" value="100" />
-		<reward type="Item" id="762mmBullet" value="100" />
+		<reward type="Item" id="762mmBullet" value="170" />
 		<reward type="Skill" id="Rifles" value="5" />
 	</quest>
 	
@@ -567,8 +567,9 @@
 			<requirement type="Holding" id="crossbowRepeater" />
 		</requirement>
 		<objective type="ZombieKill" value="25" />
-		<reward type="Item" id="crossbowBolt" value="25" />
+		<reward type="Item" id="crossbowBolt" value="35" />
 		<reward type="Skill" id="Archery" value="1" />
+		<reward type="Skill" id="Fletching" value="1" />
 		<reward type="Quest" id="challenge_survivor2" />
 	</quest>
 	
@@ -582,7 +583,8 @@
 		<objective type="ZombieKill" value="50" />
 		
 		<reward type="Skill" id="Archery" value="3" />
-		<reward type="Item" id="crossbowBolt" value="50" />
+		<reward type="Skill" id="Fletching" value="3" />
+		<reward type="Item" id="crossbowBolt" value="70" />
 		<reward type="Quest" id="challenge_survivor3" />
 	</quest>
 	
@@ -594,28 +596,44 @@
 			<requirement type="Holding" id="crossbowRepeater" />
 		</requirement>
 		<objective type="ZombieKill" value="100" />
-		<reward type="Item" id="crossbowBolt" value="100" />
+		<reward type="Item" id="crossbowBolt" value="170" />
+		<reward type="Skill" id="Fletching" value="5" />
 		<reward type="Skill" id="Archery" value="5" />
 	</quest>
 	<!-- Bruiser -->
 	<quest id="challenge_bruiser1" group_name_key="quest_bruiser" name="Bruiser Quest 1/3" subtitle="Bruiser Challenge 1" description="Bust zombie skulls" icon="ui_game_symbol_club" 
 		repeatable="false" category_key="challenge" offer="Hulk smash..." difficulty="easy">
-		<action type="TrackQuest" />
+		<requirement type="Group" id="requirementGroupBruiser" value="OR">
+			<requirement type="Holding" id="clubWood" />
+			<requirement type="Holding" id="clubIron" />
+			<requirement type="Holding" id="clubBarbed" />
+			<requirement type="Holding" id="clubSpiked" />
+			<requirement type="Holding" id="clubBurning" />
 			<requirement type="Holding" id="combatAxe" />
+		</requirement>
 
 		<objective type="ZombieKill" value="25" />
 		<reward type="Item" id="painkillers" value="2" />
 		<reward type="Item" id="firstAidBandage" value="2" />
 		<reward type="Skill" id="Blade Weapons" value="1" />
+		<reward type="Skill" id="Blunt Weapons" value="1" />
 		<reward type="Quest" id="challenge_bruiser2" />
 	</quest>
 	
 	<quest id="challenge_bruiser2" group_name_key="quest_bruiser" name="Bruiser Quest 2/3" subtitle="Bruiser Challenge 2" description="Bust zombie skulls" icon="ui_game_symbol_club" 
 		repeatable="false" category_key="challenge" offer="Break some zombie skulls.  " difficulty="Medium">
-		<requirement type="Holding" id="combatAxe" />
+		<requirement type="Group" id="requirementGroupBruiser" value="OR">
+			<requirement type="Holding" id="clubWood" />
+			<requirement type="Holding" id="clubIron" />
+			<requirement type="Holding" id="clubBarbed" />
+			<requirement type="Holding" id="clubSpiked" />
+			<requirement type="Holding" id="clubBurning" />
+			<requirement type="Holding" id="combatAxe" />
+		</requirement>
 		<objective type="ZombieKill" value="50" />
 		
 		<reward type="Skill" id="Blade Weapons" value="3" />
+		<reward type="Skill" id="Blunt Weapons" value="3" />
 		<reward type="Item" id="painkillers" value="3" />
 		<reward type="Item" id="firstAidBandage" value="3" />
 		<reward type="Quest" id="challenge_bruiser3" />
@@ -623,12 +641,20 @@
 	
 	<quest id="challenge_bruiser3" group_name_key="quest_bruiser" name="Bruiser Quest 3/3" subtitle="Bruiser Challenge 3" description="Bust zombie skulls" icon="ui_game_symbol_club" 
 		repeatable="false" category_key="challenge" offer="Crack some noggins." difficulty="Hard">
-		<requirement type="Holding" id="combatAxe" />
+		<requirement type="Group" id="requirementGroupBruiser" value="OR">
+			<requirement type="Holding" id="clubWood" />
+			<requirement type="Holding" id="clubIron" />
+			<requirement type="Holding" id="clubBarbed" />
+			<requirement type="Holding" id="clubSpiked" />
+			<requirement type="Holding" id="clubBurning" />
+			<requirement type="Holding" id="combatAxe" />
+		</requirement>
 		<objective type="ZombieKill" value="100" />
 		
 		<reward type="Item" id="painkillers" value="4" />
 		<reward type="Item" id="firstAidBandage" value="4" />
 		<reward type="Skill" id="Blade Weapons" value="5" />
+		<reward type="Skill" id="Blunt Weapons" value="5" />
 	</quest>
 	<!-- Medic -->
 <quest id="challenge_medic1" group_name_key="quest_medic" name="Medic Quest 1/3" subtitle="Medic Challenge 1" description="Medic!!!!!" icon="ui_game_symbol_medical" 
@@ -707,4 +733,247 @@
 		<reward type="Item" id="survivorNotes" value="1" />
 	</quest>
 	
+<quest id="challenge_cookbook" name="To Serve Man 1/5" subtitle="Gather the scattered cookbook pages." description="You found a ruined cookbook that is missing pages. If you find the missing pages you're sure you could learn some tasty recipes." icon="ui_game_symbol_cookware" 
+		repeatable="false" category_key="challenge" offer="You found a ruined cookbook that is missing pages. If you find the missing pages you're sure you could learn some tasty recipes." difficulty="easy">
+		<reward type="Quest" id="challenge_cookbook2" />
+		<reward type="Recipe" id="meatStew" />
+		<reward type="Recipe" id="vegetableStew" />
+		<reward type="Recipe" id="baconEggSandwich" />
+		<reward type="Recipe" id="scrambledEggs" />
+		<reward type="Recipe" id="Omelet" />
+	</quest>
+<quest id="challenge_cookbook2" name="To Serve Man 2/5" subtitle="Gather the scattered cookbook pages." description="Find all the missing pages of this famous cookbook to learn all the delicious recipes it teaches." icon="ui_game_symbol_cookware" 
+		repeatable="false" category_key="challenge" offer="Gather the scattered cookbook pages." difficulty="easy">
+		<objective type="Fetch" id="challengeCookbook" value="1" />
+		<reward type="Quest" id="challenge_cookbook3" />
+		<reward type="Recipe" id="applePie" />
+		<reward type="Recipe" id="blueberryPie" />
+		<reward type="Recipe" id="biscuit" />
+		<reward type="Recipe" id="biscuitJam" />
+	</quest>
+<quest id="challenge_cookbook3" name="To Serve Man 3/5" subtitle="Gather the scattered cookbook pages." description="Find all the missing pages of this famous cookbook to learn all the delicious recipes it teaches." icon="ui_game_symbol_cookware" 
+		repeatable="false" category_key="challenge" offer="Gather the scattered cookbook pages." difficulty="easy">
+		<objective type="Fetch" id="challengeCookbook" value="1" />
+		<reward type="Quest" id="challenge_cookbook4" />
+		<reward type="Recipe" id="Hamburger" />
+		<reward type="Recipe" id="honeyHam" />
+	</quest>
+<quest id="challenge_cookbook4" name="To Serve Man 4/5" subtitle="Gather the scattered cookbook pages." description="Find all the missing pages of this famous cookbook to learn all the delicious recipes it teaches." icon="ui_game_symbol_cookware" 
+		repeatable="false" category_key="challenge" offer="Gather the scattered cookbook pages." difficulty="easy">
+		<objective type="Fetch" id="challengeCookbook" value="1" />
+		<reward type="Quest" id="challenge_cookbook5" />
+		<reward type="Recipe" id="steakSandwich" />
+		<reward type="Recipe" id="grillSteak" />
+		<reward type="Recipe" id="stewChunkyMeat" />
+	</quest>
+<quest id="challenge_cookbook5" name="To Serve Man 5/5" subtitle="Gather the scattered cookbook pages." description="Find all the missing pages of this famous cookbook to learn all the delicious recipes it teaches." icon="ui_game_symbol_cookware" 
+		repeatable="false" category_key="challenge" offer="Gather the scattered cookbook pages." difficulty="easy">
+		<objective type="Fetch" id="challengeCookbook" value="1" />
+		<reward type="Recipe" id="mealDinner" />
+		<reward type="Recipe" id="mealBreakfast" />
+	</quest>
+
+<quest id="challenge_hotrod" name="H0tr0d's Request" subtitle="Gather rotting flesh." description="Some shady guy who calls himself H0tr0D has an unsual request that you obtain for him rotting flesh. You don't understand his reasoning but he promises a nice reward." icon="ui_game_symbol_radiation" 
+		repeatable="true" category_key="challenge" offer="Some shady guy who calls himself H0tr0D has an unsual request that you obtain for him rotting flesh. You don't understand his reasoning but he promises a nice reward." difficulty="easy">
+		<objective type="Fetch" id="rottingFlesh" value="30" />
+		<reward type="Item" id="mysteryMeat" value="10" />
+	</quest>
+<quest id="challenge_journal" name="Survivor's Journal 1/2" subtitle="Gather the missing pages" description="You found a page from a survivor's journal that hints at leading to a special stash. If you had the other pieces you might be able to find out more." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="You found a page from a survivor's journal that hints at leading to a special stash. If you had the other pieces you might be able to find out more." difficulty="easy">
+		<objective type="Fetch" id="challengeSurvivorJournal" value="5" />
+		<reward type="Item" id="survivorCombination" value="1" />
+		<reward type="Quest" id="challenge_journal2" />
+	</quest>
+<quest id="challenge_journal2" name="Survivor's Journal 2/2" subtitle="Find the locked briefase." description="The journal pages you found gave you a combination and indicated that whoever owned this journal left a prized stash of goods in a suspicious stump. Find the briefase and unlock it with the combination to see what treasure was left behind." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="hard">
+		<objective type="FetchKeep" id="cntSurvivorsBreifcase" value="1" />
+		<objective type="BlockPlace" id="cntSurvivorsBreifcase" value="1" />
+		<objective type="BlockUpgrade" id="cntSurvivorsBreifcase" value="1" />
+	</quest>
+<quest id="challenge_lockpick" name="Breaking and Enterng" subtitle="Crack the lock on three gun safes." description="Using the lockpicks given to you go break into three locked gunsafes." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="Using the lockpicks given to you go break into three locked gunsafes" difficulty="easy">
+		<reward type="Quest" id="challenge_lockpick2" />
+		<reward type="Item" id="Lockpick" value="10" />
+	</quest>
+<quest id="challenge_lockpick2" name="Breaking and Enterng" subtitle="Crack the lock on three gun safes." description="Using the lockpicks given to you go break into three locked gunsafes." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<objective type="BlockUpgrade" id="cntGunSafe" value="3" />
+		<reward type="Item" id="recipebookLockpick" value="1" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	
+	<!-- MERCHANT -->
+	<!-- AMMO -->
+<quest id="merchant9mmBullet" name="Merchant Order - 9MM Bullets" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="9mmBullet" value="30" />
+	</quest>
+<quest id="merchant10mmBullet" name="Merchant Order - 10MM Bullets" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="10mmBullet" value="30" />
+	</quest>
+<quest id="merchant762mmBullet" name="Merchant Order - 762MM Bullets" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="762mmBullet" value="30" />
+	</quest>
+<quest id="merchant44MagBullet" name="Merchant Order - 44Mag Bullets" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="44MagBullet" value="30" />
+	</quest>
+<quest id="merchantShotgunShell" name="Merchant Order - Shotgun Shells" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="shotgunShell" value="75" />
+	</quest>
+<quest id="merchantArrows" name="Merchant Order - Arrows" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="arrow" value="50" />
+	</quest>
+<quest id="merchantBolts" name="Merchant Order - Crossbow Bolts" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="crossbowBolt" value="50" />
+	</quest>
+
+	<!-- Guns -->
+<quest id="merchantPistol" name="Merchant Order - Pistol" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="gunPistol" value="300" />
+	</quest>
+<quest id="merchant44Magnum" name="Merchant Order - Magnum" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="gun44Magnum" value="300" />
+	</quest>
+<quest id="merchantPumpShotgun" name="Merchant Order - Pump Shotgun" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="gunPumpShotgun" value="300" />
+	</quest>
+<quest id="merchantSawedOffShotgun" name="Merchant Order - Sawed-Off Shotgun" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="gunSawedOffPumpShotgun" value="300" />
+	</quest>
+<quest id="merchantSMG" name="Merchant Order - SMG" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="gunMP5" value="300" />
+	</quest>
+<quest id="merchantAssaultRifle" name="Merchant Order - Assault Rifle" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="gunAK47" value="300" />
+	</quest>
+<quest id="merchantSniperRifle" name="Merchant Order - Sniper Rifle" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="gunSniperRifle" value="300" />
+	</quest>
+<quest id="merchantHuntingRifle" name="Merchant Order - Hunting Rifle" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="gunHuntingRifle" value="300" />
+	</quest>
+<quest id="merchantBow" name="Merchant Order - Bow" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="woodenBow" value="300" />
+	</quest>
+<quest id="merchantCrossbow" name="Merchant Order - Crossbow" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="crossbow" value="300" />
+	</quest>
+	<!-- TOOLS/Misc -->
+<quest id="merchantHammer" name="Merchant Order - Hammer" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="clawHammer" value="200" />
+	</quest>
+<quest id="merchantWrench" name="Merchant Order - Wrench" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="wrench" value="200" />
+	</quest>
+<quest id="merchantGascan" name="Merchant Order - Wrench" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="gasCan" value="100" />
+	</quest>
+<quest id="merchantFirstAid" name="Merchant Order - Wrench" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="firstAidKit" value="1" />
+	</quest>
+<quest id="merchantAntibiotics" name="Merchant Order - Wrench" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="antibiotics" value="1" />
+	</quest>
+
+<quest id="merchantMinibikeChassis" name="Merchant Order - Minibike Chassis" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="minibikeChassis" value="300" />
+	</quest>
+<quest id="merchantMinibikeWheels" name="Merchant Order - Minibike Wheels" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="minibikeWheels" value="300" />
+	</quest>
+<quest id="merchantMinibikeSeat" name="Merchant Order - Minibike Seat" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="minibikeSeat" value="300" />
+	</quest>
+<quest id="merchantMinibikeHandlebars" name="Merchant Order - Minibike Handlebars" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+		repeatable="true" category_key="challenge" offer="" difficulty="easy">
+		<reward type="Item" id="minibikeHandlebars" value="300" />
+	</quest>
+
+<quest id="challenge_Kickz" group_name_key="quest_Kickz" name="Kickz' Quest 1/3" subtitle="Survival Challenge 1" description="Fleet of Foot" icon="ui_game_symbol_campfire" 
+repeatable="false" category_key="challenge" offer="The slow have no place in this world. Get a pair of 'Kickz' (tm) sports shoes for extra fast looting runs." difficulty="easy">
+<objective type="FetchKeep" id="kickzBoots" value="1" />
+<reward type="Quest" id="challenge_Kickz2" />
+</quest>
+
+<quest id="challenge_Kickz2" name="Kickz' Quest 2/3" subtitle="Off to the races" description="Well, see if they fit, already." icon="ui_game_symbol_campfire" 
+repeatable="false" category_key="challenge" offer="Baby got new shoes." difficulty="easy">
+<objective type="Wear" id="kickzBoots" />
+<reward type="Item" id="speedPill" value="5" />
+<reward type="Quest" id="challenge_Kickz3" />
+<reward type="Skill" id="Athletics" value="1" />
+</quest>
+
+<quest id="challenge_Kickz3" name="Kickz' Quest 3/3" subtitle="Chemical Boosts" description="Sometimes even the best athletes need a little chemical boost. Gather some potassium, painkillers, mushrooms and goldenrod to get a special drug." icon="ui_game_symbol_campfire" 
+repeatable="false" category_key="challenge" offer="maniacpowder" difficulty="easy">
+<objective type="Fetch" id="potassiumNitratePowder" value="1" />
+<objective type="Fetch" id="painkillers" value="1" />
+<objective type="Fetch" id="mushrooms" value="1" />
+<objective type="Fetch" id="plantedGoldenrod3Harvest" value="1" />
+<reward type="Item" id="maniacPowder" value="1" />
+<reward type="Skill" id="Medicine" value="1" />
+</quest>
+
+<quest id="challenge_Loki" group_name_key="quest_Loki" name="Loki's Hints 1/4" subtitle="Survival Challenge 1" description="Good clean water is the key to staying hydrated. The first step is filtration. First make some charcoal in a campfire, then collect some sand, plant fibers and a bottle of murky water." icon="ui_game_symbol_campfire" 
+repeatable="false" category_key="challenge" offer="Follow Loki's guide to learn how to craft unique items to improve your odds of survival." difficulty="easy">
+<objective type="FetchKeep" id="bottledRiverWater" value="1" />
+<objective type="FetchKeep" id="crushedSand" value="1" />
+<objective type="FetchKeep" id="charcoalChips" value="1" />
+<objective type="FetchKeep" id="yuccaFibers" value="1" />
+<reward type="Recipe" id="lokiWater" />
+<reward type="Quest" id="challenge_Loki2" />
+</quest>
+
+<quest id="challenge_Loki2" name="Loki's Hints 2/4" subtitle="Make a laminated bow" description="A simple wood bow will break easily. Gather some glue to laminate strips of wood and rawhide for the bowstring and your bow will be more durable." icon="ui_game_symbol_campfire" 
+repeatable="false" category_key="challenge" offer="laminated bows" difficulty="easy">
+<objective type="FetchKeep" id="glue" value="1" />
+<objective type="FetchKeep" id="wood" value="12" />
+<objective type="FetchKeep" id="animalHide" value="1" />
+<reward type="Recipe" id="lokiBow" />
+<reward type="Quest" id="challenge_Loki3" />
+</quest>
+
+<quest id="challenge_Loki3" name="Loki's Hints 3/4" subtitle="Chemical Headshots" description="Better living through Chemistry: Give zombies a dose of their own medicine. Gather some zombie flesh, cook it up in a beaker to make a nasty alternative ammo for your shotgun." icon="ui_game_symbol_campfire" 
+repeatable="false" category_key="challenge" offer="zombie smoke beacon" difficulty="easy">
+<objective type="FetchKeep" id="rottingFlesh" value="1" />
+<objective type="FetchKeep" id="gunPowder" value="2" />
+<objective type="FetchKeep" id="shotgunShellCasing" value="1" /> 
+<reward type="Recipe" id="chemicalAgent" />
+<reward type="Recipe" id="lokiShell" />
+<reward type="Quest" id="challenge_Loki4" />
+</quest>
+
+<quest id="challenge_Loki4" name="Loki's Hints 4/4" subtitle="Feast after Famine" description="Good food is hard to come by, in today's world. But with a little effort you can prepare healthy and tasty meals. First cut up some vegetables (corn, potatos, cabbage and leeks), by 'scrapping' them . . ." icon="ui_game_symbol_campfire" 
+repeatable="false" category_key="challenge" offer="" difficulty="easy">
+<objective type="FetchKeep" id="assortedVegetables" value="4" />
+<objective type="FetchKeep" id="rawMeat" value="1" />
+<objective type="FetchKeep" id="bowlWater" value="1" /> 
+<reward type="Recipe" id="lokiStew" />
+<reward type="SkillPoints" value="3" />
+<reward type="Item" id="survivorNotes" value="1" />
+</quest>
+
 </quests>

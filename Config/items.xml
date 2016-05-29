@@ -151,21 +151,21 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Buff_chance" value=".5,.3,.3" />
 		<property name="DamageBonus.wood" value=".5" />
 		<property name="DamageBonus.stone" value="1" />
-		<property name="DamageBonus.metal" value=".5" />
+		<property name="DamageBonus.metal" value=".8" />
 		<property name="DamageBonus.head" value="4" />
 		<property name="DamageBonus.concrete" value=".5" />
 		<property name="DamageBonus.glass" value="20" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="20,50" />
-		<property name="BlockDamage" value="10,60" />
+		<property name="BlockDamage" value="20,60" />
 		<property name="DegradationMax" value="200,1000" />
 		<property name="DegradationRate" value="1,1" />
 		<property name="DismembermentBaseChance" value="0.1,0.3"/>
 		<property name="DismembermentBonus" value="0,0.00036"/>
 	</property>
 	<property name="Group" value="Tools/Traps" />
-	<property name="ActionSkillGroup" value="Blunt Weapons"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="Tool Smithing"/>
 </item>
 
@@ -381,7 +381,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Class" value="Ranged" />
 		<property name="Delay" value="0.3" />
 		<property name="Magazine_size" value="15" />
-		<property name="Magazine_items" value="9mmBullet, 9mmBulletHP, 9mmBulletINC" />
+		<property name="Magazine_items" value="9mmBullet, 9mmBulletHP, 9mmBulletINC, Unload" />
 		<property name="Magazine_item_ray_counts" value="1, 1, 1" />
 		<property name="Magazine_item_ray_spreads" value="0, 0, 0" />
 		<property name="Reload_time" value="2" />
@@ -430,7 +430,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Class" value="Ranged" />
 		<property name="Delay" value="0.34" />
 		<property name="Magazine_size" value="6" />
-		<property name="Magazine_items" value="44MagBullet, 44MagBulletHP, 44MagBulletINC" />
+		<property name="Magazine_items" value="44MagBullet, 44MagBulletHP, 44MagBulletINC, Unload" />
 		<property name="Magazine_item_ray_counts" value="1,1,1" />
 		<property name="Magazine_item_ray_spreads" value="0,0,0" />
 		<property name="Reload_time" value="4" />
@@ -481,7 +481,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Crosshair_min_distance" value="30" />
 		<property name="Crosshair_max_distance" value="50" />
 		<property name="Magazine_size" value="8" />
-		<property name="Magazine_items" value="shotgunShell, shotgunShellINC, SiegeShell, lokiShell" />
+		<property name="Magazine_items" value="shotgunShell, shotgunShellINC, SiegeShell, lokiShell, Unload" />
 		<property name="Magazine_item_ray_counts" value="9, 9, 9, 9" />
 		<property name="Magazine_item_ray_spreads" value="0.9, 0.9, 0.9, 0.9" />
 		<property name="Reload_time" value="2.6" />
@@ -537,7 +537,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Crosshair_min_distance" value="30" />
 		<property name="Crosshair_max_distance" value="50" />
 		<property name="Magazine_size" value="8" />
-		<property name="Magazine_items" value="shotgunShell, shotgunSlug, shotgunShellINC, lokiShell" />
+		<property name="Magazine_items" value="shotgunShell, shotgunSlug, shotgunShellINC, lokiShell, Unload" />
 		<property name="Magazine_item_ray_counts" value="8, 1, 8, 8" />
 		<property name="Magazine_item_ray_spreads" value="0.75, 0.25, 0.75, 0.75" />
 		<property name="Reload_time" value="2.6" />
@@ -594,7 +594,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Crosshair_min_distance" value="5" />
 		<property name="Crosshair_max_distance" value="30" />
 		<property name="Magazine_size" value="30" />
-		<property name="Magazine_items" value="10mmBullet, 10mmBulletHP, 10mmBulletINC" />
+		<property name="Magazine_items" value="10mmBullet, 10mmBulletHP, 10mmBulletINC, Unload" />
 		<property name="Magazine_item_ray_counts" value="1, 1, 1" />
 		<property name="Magazine_item_ray_spreads" value="0, 0, 0" />
 		<property name="Reload_time" value="4.1" />
@@ -653,7 +653,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Crosshair_min_distance" value="5" />
 		<property name="Crosshair_max_distance" value="30" />
 		<property name="Magazine_size" value="30" />
-		<property name="Magazine_items" value="762mmBullet, 762mmBulletHP, 762mmBulletINC" />
+		<property name="Magazine_items" value="762mmBullet, 762mmBulletHP, 762mmBulletINC, Unload" />
 		<property name="Magazine_item_ray_counts" value="1, 1, 1" />
 		<property name="Magazine_item_ray_spreads" value="0, 0, 0" />
 		<property name="Reload_time" value="3.9" />
@@ -708,7 +708,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Crosshair_min_distance" value="30" />
 		<property name="Crosshair_max_distance" value="100" />
 		<property name="Magazine_size" value="8" />
-		<property name="Magazine_items" value="762mmBullet, 762mmBulletHP, 762mmBulletINC" />
+		<property name="Magazine_items" value="762mmBullet, 762mmBulletHP, 762mmBulletINC, Unload" />
 		<property name="Magazine_item_ray_counts" value="1, 1, 1" />
 		<property name="Magazine_item_ray_spreads" value="0, 0, 0" />
 		<property name="Reload_time" value="2.66" />
@@ -759,7 +759,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Crosshair_min_distance" value="30" />
 		<property name="Crosshair_max_distance" value="100" />
 		<property name="Magazine_size" value="5" />
-		<property name="Magazine_items" value="762mmBullet, 762mmBulletHP, 762mmBulletINC" />
+		<property name="Magazine_items" value="762mmBullet, 762mmBulletHP, 762mmBulletINC, Unload" />
 		<property name="Magazine_item_ray_counts" value="1, 1, 1" />
 		<property name="Magazine_item_ray_spreads" value="0, 0, 0" />
 		<property name="Reload_time" value="2.5" />
@@ -810,7 +810,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Delay" value="0.8" />
 		<property name="Range" value="200" />
 		<property name="Magazine_size" value="1" />
-		<property name="Magazine_items" value="rocket" />
+		<property name="Magazine_items" value="rocket, Unload" />
 		<property name="Reload_time" value="2" />
 		<property name="Bullet_icon" value="uzi" />
 		<property name="Sound_start" value="Weapons/Ranged/M136/m136_fire" />
@@ -848,7 +848,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageEntity" value="25" />
 		<property name="DamageBlock" value="0.3" />
 		<property name="Magazine_size" value="1" />
-		<property name="Magazine_items" value="blunderbussAmmo, blunderbussAmmoShredder" />
+		<property name="Magazine_items" value="blunderbussAmmo, blunderbussAmmoShredder, Unload" />
 		<property name="Magazine_item_ray_counts" value="10, 10" />
 		<property name="Magazine_item_ray_spreads" value="0.96, 0.96" />
 		<property name="Reload_time" value="3.9" />
@@ -937,7 +937,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DismembermentBaseChance" value="0,0"/>
 		<property name="DismembermentBonus" value="0,0"/>
 	</property>
-	<property name="ActionSkillGroup" value="Athletics"/>
+	<property name="ActionSkillGroup" value="Unarmed"/>
 	<!--use_action class="LiftUpTerrain" delay="1" use_time="..." gain_health="-5"gain_stamina="-20" gain_food="0" gain_water="10" gain_sickness="15" condition_raycast_block="77,78,79,80" sound_start="UseActions/player_drinking" /-->
 </item>
 
@@ -1109,7 +1109,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.metal" value="0.5" />
 		<property name="DamageBonus.earth" value="0.25" />
 		<property name="DamageBonus.organic" value="1" />
-		<property name="ActionExp" value="2" />
+		<property name="ActionExp" value="1" />
 		<property name="ToolCategory.Butcher" value="0.5" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
@@ -1144,6 +1144,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DegradationMax" value="300,600" />
 		<property name="DegradationRate" value="1,1" />
 	</property>
+	<property name="ActionSkillGroup" value="Axes"/>
 </item>
 
 <item id="107" name="fireaxeIron">
@@ -1182,7 +1183,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DismembermentBonus" value="0.001,0.005"/>
 	</property>
 	<property name="Group" value="Tools/Traps" />
-	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="ActionSkillGroup" value="Axes"/>
 	<property name="CraftingSkillGroup" value="Tool Smithing"/>
 </item>
 
@@ -1218,7 +1219,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Sound_start" value="swoosh" />
 		<property name="Stamina_usage" value="4" />
 		<property name="DamageBonus.glass" value="25" />
-		<property name="DamageBonus.head" value="2" />
+		<property name="DamageBonus.head" value="4" />
 		<property name="DamageBonus.wood" value=".2" />
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.organic" value=".2" />
@@ -1464,9 +1465,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Stamina_usage" value="4" />
 		<property name="DamageBonus.head" value="5" />
 		<property name="DamageBonus.glass" value="25" />
-		<property name="DamageBonus.stone" value="1" />
-		<property name="DamageBonus.concrete" value="1" />
-		<property name="DamageBonus.metal" value="1" />
+		<property name="DamageBonus.stone" value="0.8" />
+		<property name="DamageBonus.concrete" value="0.6" />
+		<property name="DamageBonus.metal" value="0.6" />
 		<property name="DamageBonus.organic" value=".5" />
 		<property name="DamageBonus.earth" value="1" />
 	</property>
@@ -1499,8 +1500,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="DegradationBreaksAfter" value="false" />
 	<property name="SoundJammed" value="Weapons/weapon_jam" />
 	<property name="Weight" value="33" />
-	<property name="DegradationMax" value="100,600" />
-	<property name="DegradationRate" value="2,1" />
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Launcher" />
 		<property name="Delay" value="0.2" />
@@ -1863,7 +1862,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="BlockDamage" value="1,5" />
 	</property>
 	<property name="DescriptionKey" value="arrowDesc"/>
-	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 
 <item id="165" name="ironArrow">
@@ -1898,7 +1897,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="EntityDamage" value="22,45" />
 		<property name="BlockDamage" value="5,10" />
 	</property>
-	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 
 <item id="166" name="steelArrow">
@@ -1933,7 +1932,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="EntityDamage" value="22,55" />
 		<property name="BlockDamage" value="6,11" />
 	</property>
-	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 
 <item id="167" name="flamingArrow">
@@ -1968,7 +1967,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="BlockDamage" value="6,11" />
 		<property name="ApplyBuff" value="1, 1" param1="burning" />
 	</property>
-	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 
 <item id="170" name="crossbowBolt">
@@ -1977,7 +1976,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_hand_stonePrefab" />
 	<property name="HoldType" value="32" />
 	<property name="Material" value="wood" />
-	<property name="Stacknumber" value="250" /> <!-- 250 - 500STK ammo -->
+	<property name="Stacknumber" value="500" /> <!-- 250 - 500STK ammo -->
 	<property name="FuelValue" value="8" />
 	<property class="Action1">
 		<property name="Class" value="Projectile" />
@@ -2000,7 +1999,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="EntityDamage" value="25,45" />
 		<property name="BlockDamage" value="1,5" />
 	</property>
-	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+	<property name="CraftingSkillGroup" value="Fletching"/>
 	<property name="Group" value="Ammo/Weapons" />
 </item>
 
@@ -2035,7 +2034,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="BlockDamage" value="6,10" />
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
-	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 
 <item id="172" name="steelCrossbowBolt">
@@ -2068,7 +2067,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="BlockDamage" value="6,11" />
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
-	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 
 <item id="173" name="explodingCrossbowBolt">
@@ -2108,7 +2107,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="BlockDamage" value="6,11" />
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
-	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 
 <!-- * * * * * * * * * * explosives / decoys / thrown items * * * * * * * * * * -->
@@ -2255,6 +2254,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="Bartering"/>
 </item>
 
 <item id="210" name="partsPistol_grip">
@@ -2914,6 +2914,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 
 <item id="360" name="clothHat"> <!-- clothArmor -->
 	<property name="Extends" value="clothBoots" />
+	<property name="Weight" value="20" />
 	<property name="FuelValue" value="3" />
 	<property name="EquipSlot" value="Head" />
 	<property class="UMA">
@@ -4146,7 +4147,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
  	<property name="DegradationBreaksAfter" value="false" />
 	<property name="EquipSlot" value="Feet" />
 	<property name="FuelValue" value="5" />
-	<property name="Weight" value="5" />
 	<property class="Attributes"> <!-- clothArmor -->
 		<property name="ConcussiveProtection" value="0.125,0.25" />
 		<property name="PunctureProtection" value="0.125,0.25" />
@@ -4293,6 +4293,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Material" value="cloth" />
 	<property name="RepairTools" value="cloth" />
+	<property name="Weight" value="15" />
 	<property name="HoldType" value="45" />
  	<property name="DegradationBreaksAfter" value="false" />
 	<property name="EquipSlot" value="Chest" />
@@ -4879,7 +4880,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Meshfile" value="Items/Food/fruit_yucca" />
 	<property name="Material" value="organic" />
 	<property name="HoldType" value="14" />
-	<property name="Stacknumber" value="50" /> <!-- STK food -->
+	<property name="Stacknumber" value="500" /> <!-- STK food -->
 	<property class="Action1">
 		<property name="Class" value="Eat" />
 		<property name="Delay" value="1.0" />
@@ -5302,7 +5303,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 
 <item id="740" name="meatStew">
-	<!-- <property name="HandMeshfile" value="Items/Food/venison_stewHandPrefab" /> -->
 	<property name="Meshfile" value="Items/Food/venison_stewPrefab" />
 	<property name="Material" value="organic" />
 	<property name="HoldType" value="23" />
@@ -5763,9 +5763,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 <item id="900" name="schematicMaster">
 	<property name="IsDeveloper" value="true" />
 	<property name="Meshfile" value="Items/Misc/Book" />
-	<property name="Material" value="paper" />
+	<property name="Material" value="Survivor Notes" />
 	<property name="HoldType" value="21" />
-	<property name="Weight" value="5" />
+	<property name="Weight" value="1" />
 	<property name="FuelValue" value="5" />
 	<property name="Stacknumber" value="50" /> <!-- STK book -->
 	<property class="Action1"> <!-- UseAction -->
@@ -5819,7 +5819,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="crossbow,crossbowBolt,ironCrossbowBolt,steelCrossbowBolt" />
-		<property name="Skills_to_gain" value="Weapon Smithing,Archery" />
+		<property name="Skills_to_gain" value="Archery,Fletching" />
 	</property>
 </item>
 
@@ -6596,6 +6596,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Stacknumber" value="500" /> <!-- STK resource -->
 	<property name="FuelValue" value="1" />
 	<property name="Group" value="Resources" />
+	<property name="CraftingIngredientTime" value="1" />
 </item>
 
 <item id="1341" name="ironArrowHead">
@@ -7229,6 +7230,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Stacknumber" value="10" /> <!-- STK loot -->
 	<property name="Weight" value="15" />
 	<property name="Group" value="Chemicals" />
+	<property name="CraftingSkillGroup" value="Bartering"/>
 </item>
 
 <item id="1444" name="bellows">
@@ -7326,7 +7328,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 
 	<!-- Valmod Starts -->
-	<item id="1599" name="Valmod Version 2.6">
+	<item id="1599" name="Valmod Version 2.8">
 		<property name="CustomIcon" value="Bounty_Hat" />
 		<property name="Meshfile" value="Items/Misc/paper" />
 		<property name="HoldType" value="21" />
@@ -7397,7 +7399,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Crosshair_min_distance" value="30" />
 		<property name="Crosshair_max_distance" value="50" />
 		<property name="Magazine_size" value="2" />
-		<property name="Magazine_items" value="shotgunShell, shotgunShellINC, SiegeShell, lokiShell" />
+		<property name="Magazine_items" value="shotgunShell, shotgunShellINC, SiegeShell, lokiShell, Unload" />
 		<property name="Magazine_item_ray_counts" value="9, 9, 9, 9" />
 		<property name="Magazine_item_ray_spreads" value="0.9, 0.9, 0.9, 0.9" />
 		<property name="Reload_time" value="2.6" />
@@ -7587,13 +7589,13 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="ToolCategory.Butcher" value="0.55" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="20,60" />
+			<property name="EntityDamage" value="15,35" />
 			<property name="BlockDamage" value="6,35" />
 			<property name="DegradationMax" value="400,1200" />
 			<property name="DegradationRate" value="1,1" />
 		</property>
-		<property name="ActionSkillGroup" value="Blade Weapons"/>
-		<property name="CraftingSkillGroup" value="Tool Smithing"/>
+		<property name="ActionSkillGroup" value="Axes"/>
+		<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 	</item>
 	<item id="1619" name="Tranquilizer">
 		<property name="DescriptionKey" value="TranquilizerDesc"/>
@@ -8121,6 +8123,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="DamageEntity" value="1000" />
 			<property name="Stamina_usage" value="1" />
 			<property name="ToolCategory.Butcher" value="0" />
+			<property name="SupportHarvesting" value="false" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="1000,1000" />
@@ -8581,6 +8584,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</item>
 <item id="1730" name="coolGloves">
 	<property name="Extends" value="clothBoots" />
+	<property name="Weight" value="20" />
 	<property name="Insulation" value="-10"/>
 	<property name="DescriptionKey" value="coolGlovesDesc"/>
 	<property name="FuelValue" value="1" />
@@ -8593,6 +8597,16 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Overlay0" value="armor_kevlar_gloves" />
 		<property name="Layer" value="0" />
 		<property name="UISlot" value="Gloves" />
+	</property>
+</item>
+<item id="1731" name="kickzBoots">
+	<property name="Extends" value="wornBoots" />
+	<property name="DescriptionKey" value="kickzBootsDesc"/>
+	<property name="Insulation" value="-10"/>
+	<property name="CustomIcon" value="wornBoots" />
+	<property name="CustomIconTint" value="0033FF" />
+	<property class="UMA">
+		<property name="Overlay0Tint" value="0, 51, 204" />
 	</property>
 </item>
 	<!-- Helmet Light Mod -->
@@ -9223,7 +9237,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Extends" value="beer" />
 	<property name="DescriptionKey" value="appleCiderDesc"/>
 		<property class="Action1">
-			<property name="Gain_food" value="1" />
+			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="5" />
 			<property name="Gain_stamina" value="20" />
 			<property name="Gain_wellness" value="0.8" />
@@ -9363,7 +9377,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Material" value="organic" />
         <property name="HoldType" value="15" />
 		<property name="CraftingIngredientTime" value="5" />
-		<property name="Stacknumber" value="50" /> <!-- STK food -->
+		<property name="Stacknumber" value="500" /> <!-- STK food -->
         <property class="Action1">
             <property name="Class" value="Eat" />
             <property name="Delay" value="1.0" />
@@ -9381,7 +9395,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Material" value="assortedVegetables" />
         <property name="HoldType" value="15" />
 		<property name="CraftingIngredientTime" value="5" />
-		<property name="Stacknumber" value="50" /> <!-- STK food -->
+		<property name="Stacknumber" value="500" /> <!-- STK food -->
         <property class="Action1">
             <property name="Class" value="Eat" />
             <property name="Delay" value="1.0" />
@@ -9399,7 +9413,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Material" value="assortedVegetables" />
         <property name="HoldType" value="15" />
 		<property name="CraftingIngredientTime" value="5" />
-		<property name="Stacknumber" value="50" /> <!-- STK food -->
+		<property name="Stacknumber" value="500" /> <!-- STK food -->
         <property class="Action1">
             <property name="Class" value="Eat" />
             <property name="Delay" value="1.0" />
@@ -9416,7 +9430,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Material" value="organic" />
         <property name="HoldType" value="15" />
 		<property name="CraftingIngredientTime" value="5" />
-		<property name="Stacknumber" value="50" /> <!-- STK food -->
+		<property name="Stacknumber" value="500" /> <!-- STK food -->
         <property class="Action1">
             <property name="Class" value="Eat" />
             <property name="Delay" value="1.0" />
@@ -9515,7 +9529,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Material" value="organic" />
 	<property name="HoldType" value="3" />
-	<property name="Stacknumber" value="50" />
+	<property name="Stacknumber" value="500" />
 	<property class="Preview">
 		<property name="Zoom" value="28" />
 		<property name="Pos" value="0,-0.05" />
@@ -9601,6 +9615,101 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Smell" value="ExLargeSmell" />
 	<property name="Group" value="Food/Cooking" />
 </item>
+<item id="1845" name="tunaSandwich">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+	<property name="Material" value="organic" />
+	<property name="HoldType" value="31" />
+	<property name="Stacknumber" value="50" /> <!-- STK food -->
+	<property class="Action1">
+		<property name="Class" value="Eat" />
+		<property name="Delay" value="2.1" />
+		<property name="Use_time" value="..." />
+		<property name="Gain_health" value="2" />
+		<property name="Gain_food" value="17" />
+		<property name="Gain_water" value="0" />
+		<property name="Gain_wellness" value="0.4" />
+		<property name="Sound_start" value="UseActions/player_eating" />
+	</property>
+	<property name="Group" value="Food/Cooking" />
+</item>
+<item id="1846" name="mysteryMeat">
+	<property name="Extends" value="rottingFlesh" />
+	<property name="DescriptionKey" value="mysteryMeatDesc"/>
+	<property name="CustomIcon" value="rottingFlesh" />
+	<property class="Action1">
+		<property name="Gain_health" value="-5" />
+		<property name="Gain_food" value="20" />
+		<property name="Gain_water" value="-5" />
+		<property name="Gain_stamina" value="-10" />
+		<property name="Gain_sickness" value="20" />
+		<property name="Buff" value="peculiarTaste" />
+		<property name="Buff_chance" value="1" />
+	</property>
+</item>
+<item id="1847" name="bagChips">
+	<property name="Extends" value="cornBread" />
+	<property name="DescriptionKey" value="bagChipsDesc"/>
+	<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+	<property class="Action1">
+		<property name="Gain_food" value="5" />
+		<property name="Gain_water" value="-5" />
+		<property name="Gain_wellness" value="0" />
+	</property>
+</item>
+<item id="1848" name="bagChipsHot">
+	<property name="Extends" value="cornBread" />
+	<property name="DescriptionKey" value="bagChipsHotDesc"/>
+	<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+	<property class="Action1">
+		<property name="Gain_food" value="5" />
+		<property name="Gain_water" value="-10" />
+		<property name="Gain_wellness" value="0" />
+	</property>
+</item>
+<item id="1849" name="candybar">
+	<property name="Extends" value="cornBread" />
+	<property name="DescriptionKey" value="candybarDesc"/>
+	<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+	<property class="Action1">
+		<property name="Gain_food" value="5" />
+		<property name="Gain_water" value="0" />
+		<property name="Gain_wellness" value="0" />
+	</property>
+</item>
+<item id="1850" name="ramenNoodles">
+	<property name="Extends" value="cornBread" />
+	<property name="DescriptionKey" value="ramenNoodlesDesc"/>
+	<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+	<property class="Action1">
+		<property name="Gain_food" value="5" />
+		<property name="Gain_water" value="-5" />
+		<property name="Gain_wellness" value="0" />
+	</property>
+</item>
+<item id="1851" name="bowlRamenNoodles">
+	<property name="Meshfile" value="Items/Food/venison_stewPrefab" />
+	<property name="DescriptionKey" value="bowlRamenNoodles"/>
+	<property name="Material" value="organic" />
+	<property name="HoldType" value="23" />
+	<property name="Group" value="Food/Cooking" />
+	<property name="Stacknumber" value="50" />
+	<property class="Action1">
+		<property name="Class" value="Eat" />
+		<property name="Delay" value="1.0" />
+		<property name="Use_time" value="..." />
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="14" />
+		<property name="Gain_water" value="3" />
+		<property name="Create_item" value="bowl" />
+		<property name="Sound_start" value="UseActions/player_drinking" />
+	</property>
+	<property name="Group" value="Food/Cooking" />
+	<property class="Preview">
+		<property name="Zoom" value="30" />
+		<property name="Pos" value="0,-0.03" />
+		<property name="Rot" value="90,45,0" />
+		</property>
+</item>
 	<!-- Zombie Hands -->
 	<item id="1900" name="handFeralRavager">
 		<property name="Extends" value="handMaster" />
@@ -9647,6 +9756,18 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Buff_chance" value="0.2,0.07,0.3" />
 	</property>
 </item>
+<item id="1904" name="handZombieBurningTank">
+<property name="Extends" value="handCopZombie" />
+	<property name="IsDeveloper" value="true" />
+<property class="Action1">
+<property name="Magazine_items" value="vomitZombieProjectileFire" />
+</property>
+</item>
+<item id="1905" name="vomitZombieProjectileFire">
+<property name="Extends" value="vomitZombieProjectile" />
+	<property name="IsDeveloper" value="true" />
+<property name="Meshfile" value="ParticleEffects/p_onFire" />
+</item> 
 	
 	<!-- Health Items -->
 	<item id="1920" name="Peroxide">
@@ -9704,9 +9825,11 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DescriptionKey" value="medicalSplintDesc"/>
 	<property class="Action0">
 		<property name="Buff" value="medicalsplint,firstAid" />
+			<property name="Debuff" value="sprainedLeg" />
 	</property>
 		<property class="Action1">
 			<property name="Buff" value="medicalsplint,firstAid" />
+			<property name="Debuff" value="sprainedLeg" />
 		</property>
 	</item>
 	<item id="1925" name="disinfectantBandage">
@@ -9744,10 +9867,11 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="DamageBonus.plants" value="25" />
 			<property name="DamageBonus.leaves" value="25" />
 			<property name="ToolCategory.Pluck" value="1" />
+			<property name="ToolCategory.Farm" value="1" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="8,10" />
-			<property name="DegradationMax" value="150,600" />
+			<property name="DegradationMax" value="250,750" />
 			<property name="DegradationRate" value="2,1" />
 			<property name="DismembermentBaseChance" value="0.1,0.1"/>
 			<property name="DismembermentBonus" value="0,0"/>
@@ -9797,7 +9921,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="Sound_start" value="Player_Male/player1drownsurface" />
 			<property name="Debuff" value="infection" />
 			<property name="Buff" value="Resistance" />
-			<property name="Gain_wellness" value="-3" />
 		</property>
 		<property name="Group" value="Medicine" />
 		<property class="Preview">
@@ -10028,7 +10151,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="1" />
 		<property name="Group" value="Resources" />
-		<property name="Stacknumber" value="1" />
+		<property name="Stacknumber" value="10" />
 		<property class="Action1">
 			<property name="Class" value="Repair" />
 			<property name="Delay" value="0.53" />
@@ -10174,6 +10297,110 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Debuff" value="dysentery" />
 	</property>
 </item>
+<item id="1982" name="crudeNail">
+	<property name="Meshfile" value="Items/Tools/nailProjectilePrefab" />
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+	<property name="Material" value="organic" />
+	<property name="HoldType" value="45" />
+	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+</item>
+<item id="1983" name="charcoalChips">
+	<property name="DescriptionKey" value="charcoalChipsDesc"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+	<property name="Material" value="coal" />
+	<property name="HoldType" value="45" />
+	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+	<property name="FuelValue" value="5" />
+	<property name="DropScale" value="8" />
+	<property name="Group" value="Resources" />
+	<property name="CraftingIngredientTime" value="1" />
+</item>
+<item id="1984" name="Unload">
+	<property name="IsDeveloper" value="true" />
+	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+	<property name="Material" value="lead" />
+	<property name="HoldType" value="45" />
+	<property name="Stacknumber" value="250" />
+	<property name="Group" value="Ammo/Weapons" />
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="EntityDamage" value="0" />
+		<property name="BlockDamage" value="0" />
+	</property>
+	<property name="CustomIcon" value="canCatfood" />
+</item>
+<item id="1985" name="speedPill">
+	<property name="DescriptionKey" value="speedPillDesc"/>
+	<property name="Meshfile" value="Items/Health/painkillersPrefab" />
+	<property name="Material" value="organic" />
+	<property name="HoldType" value="16" />
+	<property name="Stacknumber" value="5" />
+	<property class="Action1">
+		<property name="Class" value="Eat" />
+		<property name="Delay" value="1.0" />
+		<property name="Use_time" value="..." />
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="0" />
+		<property name="Gain_water" value="-5" />
+		<property name="Sound_start" value="UseActions/player_painkillers" />
+		<property name="Buff" value="speedBoost" />
+	</property>
+	<property name="ActionExp" value="5"/>
+	<property name="ActionSkillGroup" value="Medicine"/>
+	<property name="CraftingSkillGroup" value="Science"/>
+	<property name="Group" value="Medicine" />
+</item>
+<item id="1986" name="scythe">
+	<property name="DescriptionKey" value="scytheDesc"/>
+	<property name="Meshfile" value="Items/Tools/pickaxe_ironPrefab" />
+	<property name="SoundJammed" value="ItemNeedsRepair" />
+	<property name="Material" value="metal" />
+	<property name="RepairTools" value="forgedIron" />
+	<property name="HoldType" value="32" />
+ 	<property name="DegradationBreaksAfter" value="false" />
+	<property name="SoundDestroy" value="metaldestroy1" />
+	<property name="FuelValue" value="30" />
+	<property class="Action0">
+		<property name="Class" value="Melee" />
+		<property name="Delay" value="1.0" />
+		<property name="Range" value="2.4" />
+		<property name="Sphere" value="0.1" />
+		<property name="Block_range" value="4" />
+		<property name="Sound_start" value="swoosh" />
+		<property name="Stamina_usage" value="4" />
+		<property name="DamageBonus.glass" value="25" />
+		<property name="DamageBonus.head" value="6" />
+		<property name="DamageBonus.stone" value=".1" />
+		<property name="DamageBonus.metal" value=".1" />
+		<property name="DamageBonus.wood" value=".2" />
+		<property name="DamageBonus.earth" value=".2" />
+		<property name="DamageBonus.glass" value="25" />
+		<property name="DamageBonus.plants" value="25" />
+		<property name="DamageBonus.leaves" value="25" />
+		<property name="DamageBonus.organic" value="10" />
+		<property name="ToolCategory.Farm" value="1" />
+		<property name="ToolCategory.Pluck" value="1" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="12,30" />
+		<property name="BlockDamage" value="1,2" />
+		<property name="DegradationMax" value="300,800" />
+		<property name="DismembermentBaseChance" value="0.1,0.2"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons" />
+	<property name="ActionSkillGroup" value="Blade Weapons"/>
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+</item>
+<item id="1987" name="fiberPulp">
+	<property name="DescriptionKey" value="fiberPulpDesc"/>
+	<property name="Meshfile" value="Items/Crafting/plant_fibers" />
+	<property name="Material" value="plants" />
+	<property name="HoldType" value="16" />
+	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+	<property name="FuelValue" value="5" />
+	<property name="Group" value="Resources" />
+</item>
 	<!-- Recipe Books Mod -->
 	<item id="2000" name="improvisedWeaponsSchematic">
 		<property name="DescriptionKey" value="improvisedWeaponsSchematicDesc"/>
@@ -10188,7 +10415,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DescriptionKey" value="recipebookMasonryDesc"/>
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="chisel,cobblestones,cement,brickBlock,brickCNRFull,brickCNRInside,brickCNRRamp,brickDecayedBlock,brickPaversBlock,brickPaversStairs25,brickRamp,brickPlate,cobblestoneFrameBlock,cobblestoneFrameRamp,cementMixer" />
+			<property name="Recipes_to_learn" value="cementMixer,chisel,cobblestones,cement,adobeWhiteBlock,brickBlock,brickCNRFull,brickCNRInside,brickCNRRamp,brickDecayedBlock,brickPaversBlock,brickPaversStairs25,brickRamp,brickPlate,cobblestoneFrameBlock,cobblestoneFrameRamp" />
 			<property name="Skills_to_gain" value="Miscellaneous Crafting" />
 		</property>
 	</item>
@@ -10205,7 +10432,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="woodenBow,arrow,ironArrow,steelArrow" />
-			<property name="Skills_to_gain" value="Weapon Smithing,Archery" />
+			<property name="Skills_to_gain" value="Archery,Fletching" />
 		</property>
 	</item>
 	<item id="2004" name="recipebookTraps">
@@ -10213,7 +10440,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="CustomIcon" value="SurvivorNotes2" />
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="trapSpikesNew,woodLogSpike1,trapSteelSpike,trapSteelFireSpike,trapFire" />
+			<property name="Recipes_to_learn" value="trapSpikesNew,woodLogSpike1,trapSteelSpike,trapSteelFireSpike,trapFire,trussingSpike" />
 			<property name="Skills_to_gain" value="Miscellaneous Crafting" />	
 		</property>
 	</item>
@@ -10260,7 +10487,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DescriptionKey" value="recipebookPotteryDesc"/>
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="bowl,dinnerPlate" />
+			<property name="Recipes_to_learn" value="bowl,dinnerPlate,clayBucket" />
 			<property name="Skills_to_gain" value="Miscellaneous Crafting" />
 		</property>
 	</item>
@@ -10269,7 +10496,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="fireaxeIron,fireaxeSteel" />
-		<property name="Skills_to_gain" value="Tool Smithing" />
+		<property name="Skills_to_gain" value="Tool Smithing,Axes" />
 		</property>
 	</item>
 	<item id="2012" name="schematicPickaxe">
@@ -10316,7 +10543,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DescriptionKey" value="recipebookChemistryDesc"/>
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="gunPowder,oil,fuelLog,biofuel,chemicalAgent,lokiShell" />
+			<property name="Recipes_to_learn" value="workstationChemistry,gunPowder,oil,fuelLog,biofuel,chemicalAgent" />
 			<property name="Skills_to_gain" value="Science" />
 		</property>
 	</item>
@@ -10324,7 +10551,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DescriptionKey" value="schematicAnimalHideDesc"/>
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="animalHideBoots,animalHideLegArmor,animalHideChestArmor,animalHideHood,animalHideGloves,animalHidePoncho" />
+			<property name="Recipes_to_learn" value="sewingKit,animalHideBoots,animalHideLegArmor,animalHideChestArmor,animalHideHood,animalHideGloves,animalHidePoncho" />
 			<property name="Skills_to_gain" value="Leatherworking" />
 		</property>
 	</item>
@@ -10332,7 +10559,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DescriptionKey" value="schematicOilRefinerDesc"/>
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="oilRefiner" />
 			<property name="Skills_to_gain" value="Science" />
 		</property>
 	</item>
@@ -10369,23 +10595,53 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		</property>
 	</item>
 	<item id="2025" name="recipebookLoki">
-		<property name="DescriptionKey" value="recipebookLokiDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Recipes_to_learn" value="lokiStew,lokiWater,lokiBow,lokiShell" />
-			<property name="Skills_to_gain" value="Athletics,Scavenging" />
-		</property>
+	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIcon" value="recipebookLoki" />
+	<property name="DescriptionKey" value="recipebookLokiDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="challenge_Loki" />
+	</property>
 	</item>
 	<item id="2026" name="skillbookAthletics">
 		<property name="DescriptionKey" value="skillbookAthleticsDesc"/>
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
+			<property name="Skills_to_gain" value="Athletics,Athletics" />
+		</property>
+	</item>
+	<item id="2027" name="skillbookBuilding">
+		<property name="DescriptionKey" value="skillbookBuildingDesc"/>
+		<property name="Extends" value="schematicMaster" />
+		<property class="Action1">
+			<property name="Skills_to_gain" value="Miscellaneous Crafting,Tool Smithing,Construction Tools" />
+		</property>
+	</item>
+	<item id="2028" name="recipebookLokiWeapons">
+		<property name="DescriptionKey" value="recipebookLokiDesc"/>
+		<property name="Extends" value="schematicMaster" />
+		<property name="CustomIcon" value="recipebookLoki" />
+		<property class="Action1">
 			<property name="Skills_to_gain" value="Athletics" />
+		</property>
+	</item>
+	<item id="2029" name="skillbookUnarmed">
+		<property name="DescriptionKey" value="skillbookUnarmedDesc"/>
+		<property name="Extends" value="schematicMaster" />
+		<property class="Action1">
+			<property name="Skills_to_gain" value="Unarmed,Unarmed,Unarmed" />
+		</property>
+	</item>
+	<item id="2030" name="skillbookBarter">
+		<property name="DescriptionKey" value="skillbookBarterDesc"/>
+		<property name="Extends" value="schematicMaster" />
+		<property class="Action1">
+			<property name="Skills_to_gain" value="Bartering,Bartering,Bartering" />
 		</property>
 	</item>
 	
 	<!-- Colored Armor -->
 	<item id="2100" name="sprayPaint">
+		<property name="Degradation" value="125" param1="true" />
 		<property name="DescriptionKey" value="sprayPaintDesc"/>
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -10394,6 +10650,13 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Weight" value="5" />
 		<property name="Stacknumber" value="500" />
 		<property name="Group" value="Resources" />
+		<property class="Action1">
+			<property name="Class" value="Repair" />
+			<property name="Delay" value="0.4" />
+			<property name="Upgrade_hit_offset" value="-2" />
+			<property name="Sound_start" value="UseActions/repair_block" />
+			<property name="Allowed_upgrade_items" value="sprayPaint" />
+		</property>
 	</item>
 	<item id="2101" name="assortedDyes">
 		<property name="DescriptionKey" value="assortedDyesDesc"/>
@@ -12249,6 +12512,45 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="Rot" value="90,45,0" />
 		</property>
 	</item>
+	<item id="2507" name="paperRack">
+		<property name="DescriptionKey" value="paperRackDesc"/>
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="3" />
+		<property name="Stacknumber" value="10" />
+		<property class="Preview">
+			<property name="Zoom" value="28" />
+			<property name="Pos" value="0,-0.05" />
+			<property name="Rot" value="90,45,0" />
+		</property>
+	</item>
+	<item id="2508" name="clayBucket">
+		<property name="DescriptionKey" value="clayBucketDesc"/>
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="3" />
+		<property name="Stacknumber" value="10" />
+		<property class="Preview">
+			<property name="Zoom" value="28" />
+			<property name="Pos" value="0,-0.05" />
+			<property name="Rot" value="90,45,0" />
+		</property>
+	</item>
+	<item id="2509" name="waterFilter">
+		<property name="DescriptionKey" value="waterFilterDesc"/>
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="3" />
+		<property name="Stacknumber" value="10" />
+		<property class="Preview">
+			<property name="Zoom" value="28" />
+			<property name="Pos" value="0,-0.05" />
+			<property name="Rot" value="90,45,0" />
+		</property>
+	</item>
 	<!-- Skill Gain -->
 	<item id="2550" name="Skill Gain">
 		<property name="DescriptionKey" value="SkillGainDesc"/>
@@ -12351,11 +12653,12 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DescriptionKey" value="survivorNotesDesc"/>
 		<property name="Meshfile" value="Items/Misc/paper" />
 		<property name="HoldType" value="21" />
-		<property name="Material" value="paper" />
+		<property name="Material" value="Survivor Notes" />
 		<property name="Weight" value="1" />
 		<property name="Stacknumber" value="500" />
 		<property name="FuelValue" value="20" />
 		<property name="Group" value="Survival" />
+		<property name="CraftingSkillGroup" value="Bartering"/>
 	</item>
 	<item id="2591" name="survivorCombination">
 		<property name="Degradation" value="125" param1="true" />
@@ -12377,6 +12680,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<!-- Modded Quests -->
 <item id="2610" name="challengeSticky">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIconTint" value="781B8F" />
 	<property class="Action1">
 		<property name="QuestGiven" value="challenge_sticky" />
 	</property>
@@ -12437,44 +12741,91 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 <item id="2620" name="challengeBigBadBosses">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIconTint" value="781B8F" />
 	<property class="Action1">
 		<property name="QuestGiven" value="challenge_bigbadbosses" />
 	</property>
 </item>
 <item id="2621" name="challengeAnkleBitters">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIconTint" value="781B8F" />
 	<property class="Action1">
 		<property name="QuestGiven" value="challenge_anklebitters" />
 	</property>
 </item>
 <item id="2622" name="challengeAnimalTraps">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIconTint" value="781B8F" />
 	<property class="Action1">
 		<property name="QuestGiven" value="challenge_animaltrap" />
 	</property>
 </item>
 <item id="2623" name="challengeLightThemUp">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIconTint" value="781B8F" />
 	<property class="Action1">
 		<property name="QuestGiven" value="challenge_lightthemup" />
 	</property>
 </item>
 <item id="2624" name="challengeDogEatDog">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIconTint" value="781B8F" />
 	<property class="Action1">
 		<property name="QuestGiven" value="challenge_dogeatdog" />
 	</property>
 </item>
 <item id="2625" name="challengeFeedTheMole">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIconTint" value="781B8F" />
 	<property class="Action1">
 		<property name="QuestGiven" value="challenge_feedthemole" />
 	</property>
 </item>
 <item id="2626" name="challengeTakingNote">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIconTint" value="781B8F" />
 	<property class="Action1">
 		<property name="QuestGiven" value="challenge_takingnote" />
+	</property>
+</item>
+<item id="2627" name="challengeCookbook">
+	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIconTint" value="781B8F" />
+	<property name="DescriptionKey" value="challengeCookbookDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="challenge_cookbook" />
+	</property>
+</item>
+<item id="2628" name="challengeHotrod">
+	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIconTint" value="781B8F" />
+	<property name="DescriptionKey" value="challengeHotrodDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="challenge_hotrod" />
+	</property>
+</item>
+<item id="2629" name="challengeSurvivorJournal">
+	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIconTint" value="781B8F" />
+	<property name="DescriptionKey" value="challengeSurvivorJournalDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="challenge_journal" />
+	</property>
+</item>
+<item id="2630" name="challengeLockpick">
+	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIconTint" value="781B8F" />
+	<property name="DescriptionKey" value="challengeLockpickDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="challenge_journal" />
+	</property>
+</item>
+<item id="2631" name="challengeKickz">
+	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIconTint" value="781B8F" />
+	<property name="DescriptionKey" value="challengeKickzDesc"/>
+	<property class="Action1">
+	<property name="QuestGiven" value="challenge_Kickz" />
 	</property>
 </item>
 
@@ -12776,6 +13127,219 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Skills_to_gain" value="Miscellaneous Crafting" />
 	</property>
 </item>
+
+<!-- Merchant -->
+<item id="2940" name="merchantCatalogExtender">
+	<property name="Extends" value="paper" />
+	<property name="CustomIcon" value="merchantOrder" />
+	<property name="Weight" value="0" />
+	<property name="CraftingSkillGroup" value="Bartering"/>
+	<property class="Action1">
+		<property name="Class" value="Quest" />
+		<property name="QuestGiven" value="q_basicSurvival" />
+		<property name="Delay" value="0" />
+	</property>
+</item>
+<item id="2941" name="merchantOrder9MM">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderAmmo" />
+	<property name="DescriptionKey" value="merchantOrderAmmoDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchant9mmBullet" />
+	</property>
+</item>
+<item id="2942" name="merchantOrder10MM">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderAmmo" />
+	<property name="DescriptionKey" value="merchantOrderAmmoDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchant10mmBullet" />
+	</property>
+</item>
+<item id="2943" name="merchantOrder762MM">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderAmmo" />
+	<property name="DescriptionKey" value="merchantOrderAmmoDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchant762mmBullet" />
+	</property>
+</item>
+<item id="2944" name="merchantOrder44MagBullet">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderAmmo" />
+	<property name="DescriptionKey" value="merchantOrderAmmoDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchant44MagBullet" />
+	</property>
+</item>
+<item id="2945" name="merchantOrderShotgunShell">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderAmmo" />
+	<property name="DescriptionKey" value="merchantOrderAmmoDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantShotgunShell" />
+	</property>
+</item>
+<item id="2946" name="merchantOrderPistol">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderGun" />
+	<property name="DescriptionKey" value="merchantOrderWeaponDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantPistol" />
+	</property>
+</item>
+<item id="2947" name="merchantOrder44Magnum">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderGun" />
+	<property name="DescriptionKey" value="merchantOrderWeaponDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchant44Magnum" />
+	</property>
+</item>
+<item id="2948" name="merchantOrderPumpShotgun">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderGun" />
+	<property name="DescriptionKey" value="merchantOrderWeaponDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantPumpShotgun" />
+	</property>
+</item>
+<item id="2949" name="merchantOrderSawedOffShotgun">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderGun" />
+	<property name="DescriptionKey" value="merchantOrderWeaponDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantSawedOffShotgun" />
+	</property>
+</item>
+<item id="2950" name="merchantOrderSMG">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderGun" />
+	<property name="DescriptionKey" value="merchantOrderWeaponDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantSMG" />
+	</property>
+</item>
+<item id="2951" name="merchantOrderAssaultRifle">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderGun" />
+	<property name="DescriptionKey" value="merchantOrderWeaponDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantAssaultRifle" />
+	</property>
+</item>
+<item id="2952" name="merchantOrderSniperRifle">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderGun" />
+	<property name="DescriptionKey" value="merchantOrderWeaponDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantSniperRifle" />
+	</property>
+</item>
+<item id="2953" name="merchantOrderHuntingRifle">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderGun" />
+	<property name="DescriptionKey" value="merchantOrderWeaponDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantHuntingRifle" />
+	</property>
+</item>
+<item id="2954" name="merchantOrderArrows">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderAmmo" />
+	<property name="DescriptionKey" value="merchantOrderAmmoDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantArrows" />
+	</property>
+</item>
+<item id="2955" name="merchantOrderBolts">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderAmmo" />
+	<property name="DescriptionKey" value="merchantOrderAmmoDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantBolts" />
+	</property>
+</item>
+<item id="2956" name="merchantOrderBow">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderGun" />
+	<property name="DescriptionKey" value="merchantOrderWeaponDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantBow" />
+	</property>
+</item>
+<item id="2957" name="merchantOrderCrossbow">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="CustomIcon" value="merchantOrderGun" />
+	<property name="DescriptionKey" value="merchantOrderWeaponDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantCrossbow" />
+	</property>
+</item>
+<item id="2958" name="merchantOrderHammer">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="DescriptionKey" value="merchantOrderToolDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantHammer" />
+	</property>
+</item>
+<item id="2959" name="merchantOrderWrench">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="DescriptionKey" value="merchantOrderToolDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantWrench" />
+	</property>
+</item>
+<item id="2960" name="merchantOrderGascan">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="DescriptionKey" value="merchantOrderGasDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantGascan" />
+	</property>
+</item>
+<item id="2961" name="merchantOrderFirstAidKit">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="DescriptionKey" value="merchantOrderFirstAidKitDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantFirstAid" />
+	</property>
+</item>
+<item id="2962" name="merchantOrderAntibiotics">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="DescriptionKey" value="merchantOrderAntibioticsDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantAntibiotics" />
+	</property>
+</item>
+<item id="2963" name="merchantOrderMinibikeChassis">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="DescriptionKey" value="merchantOrderMinibikeChassisDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantMinibikeChassis" />
+	</property>
+</item>
+<item id="2964" name="merchantOrderMinibikeWheels">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="DescriptionKey" value="merchantOrderMinibikeWheelsDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantMinibikeWheels" />
+	</property>
+</item>
+<item id="2965" name="merchantOrderMinibikeSeat">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="DescriptionKey" value="merchantOrderMinibikeSeatDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantMinibikeSeat" />
+	</property>
+</item>
+<item id="2966" name="merchantOrderMinibikeHandlebars">
+	<property name="Extends" value="merchantCatalogExtender" />
+	<property name="DescriptionKey" value="merchantOrderMinibikeHandlebarsDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="merchantMinibikeHandlebars" />
+	</property>
+</item>
+
 <!-- Classes -->
 
 <item id="3000" name="perkSurvivor">

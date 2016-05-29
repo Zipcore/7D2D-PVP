@@ -139,16 +139,16 @@
 			<label depth="2" name="elevLabel" pos="345,-6" width="172" height="20" text=" [DECEA3]{MapElevation} M[-]" font_size="18"/>-->
 	</window>
 	<!-- Window that displays Numbers on the tool belt for each slot -->
-	<window name="windowToolbeltNumbersHUD" depth="10" width="603" height="22" pos="-313,92" anchor="CenterBottom">		
-				<label name="slot1" pos="22,0" width="22" height="22" text="  [DECEA3]1" font_size="20" justify="center"/>
-				<label name="slot2" pos="97,0" width="22" height="22" text="  [DECEA3]2" font_size="20" justify="center"/>
-				<label name="slot3" pos="172,0" width="22" height="22" text="  [DECEA3]3" font_size="20" justify="center"/>
-				<label name="slot4" pos="247,0" width="22" height="22" text="  [DECEA3]4" font_size="20" justify="center"/>
-				<label name="slot5" pos="322,0" width="22" height="22" text="  [DECEA3]5" font_size="20" justify="center"/>
-				<label name="slot6" pos="397,0" width="22" height="22" text="  [DECEA3]6" font_size="20" justify="center"/>
-				<label name="slot7" pos="472,0" width="22" height="22" text="  [DECEA3]7" font_size="20" justify="center"/>
-				<label name="slot8" pos="547,0" width="22" height="22" text="  [DECEA3]8" font_size="20" justify="center"/>
-	</window>
+<window name="windowToolbeltNumbersHUD" depth="1" width="603" height="22" pos="-313,92" anchor="CenterBottom">
+<label name="slot1" pos="-5,-6" width="22" height="22" text="  [DECEA3]1" font_size="20" justify="center"/>
+<label name="slot2" pos="70,-6" width="22" height="22" text="  [DECEA3]2" font_size="20" justify="center"/>
+<label name="slot3" pos="145,-6" width="22" height="22" text="  [DECEA3]3" font_size="20" justify="center"/>
+<label name="slot4" pos="220,-6" width="22" height="22" text="  [DECEA3]4" font_size="20" justify="center"/>
+<label name="slot5" pos="293,-6" width="22" height="22" text="  [DECEA3]5" font_size="20" justify="center"/>
+<label name="slot6" pos="370,-6" width="22" height="22" text="  [DECEA3]6" font_size="20" justify="center"/>
+<label name="slot7" pos="445,-6" width="22" height="22" text="  [DECEA3]7" font_size="20" justify="center"/>
+<label name="slot8" pos="520,-6" width="22" height="22" text="  [DECEA3]8" font_size="20" justify="center"/>
+</window>
 	<!-- Window that displays XP bar and level -->
 	<window name="playerXPHUD" width="603" height="24" depth="2" anchor="CenterBottom" pos="-313,116" controller="PlayerStatsWindow">
 			<sprite depth="2" pos="0, -14" width="603" height="10" type="sliced" color="0,0,0,150" />
@@ -475,10 +475,11 @@
 				<grid depth="1" name="inventory" rows="4" cols="8" pos="3,-3" cell_width="75" cell_height="75" controller="Backpack" repeat_content="true" >
 					<item_stack name="0"/>
 				</grid>
-			<!-- Texture example
-			<sprite depth="1" name="background" pos="606,0" color="[black]" type="sliced">
-				<texture depth="500" name="testing" width="597" height="297" pos="3,-3" texture="@http://40.media.tumblr.com/dfb8abd24bd973b0576f2405b29e8edb/tumblr_nuhxndgEvv1ta6qcfo1_1280.jpg" material="Materials/Transparent Colored"/>
-			</sprite>-->
+			<!-- VALMOD remove if offline-->
+			<sprite depth="1" name="background" pos="0,0" color="[black]" type="sliced">
+				<texture depth="500" name="InventoryBackground" width="597" height="297" pos="3,-3" texture="@http://i.imgur.com/kpry8zm.png" material="Materials/Transparent Colored"/>
+			</sprite>
+			<!-- Valmod Remove if Offline-->
 		</panel>
 	</window>
 	
@@ -1830,8 +1831,8 @@
 		
 		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
 			
-			<grid name="inventory" rows="2" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
-			required_tools="handSaw,chisel,weldingTorch,electricToolkit" required_tools_only="true">
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
+			required_tools="handSaw,weldingTorch,paperRack" required_tools_only="true">
 				<required_item_stack name="0"/>
 			</grid>		
 
@@ -1839,5 +1840,53 @@
 	</window>
 <!-- Workbench end -->
 
+<!-- Decor Workbench -->
+	<window name="windowToolsDecorWorkbench" width="228" height="121" panel="Right">
+		<panel style="header.panel">			
+			<sprite style="header.icon" sprite="ui_game_symbol_cookware"/>
+			<label style="header.name" text="TOOLS" text_key="xuiTools" />
+		</panel>
+		
+		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
+			
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
+			required_tools="handSaw,weldingTorch,electricToolkit" required_tools_only="true">
+				<required_item_stack name="0"/>
+			</grid>		
+
+		</rect>
+	</window>
+<!-- Decor Workbench end -->
+<!-- Cement Mixer Tools -->
+	<window name="windowToolsCementMixer" width="228" height="121" panel="Right">
+		<panel style="header.panel">			
+			<sprite style="header.icon" sprite="ui_game_symbol_cookware"/>
+			<label style="header.name" text="TOOLS" text_key="xuiTools" />
+		</panel>
+		
+		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
+			
+			<grid name="inventory" rows="1" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
+			required_tools="chisel" required_tools_only="true">
+				<required_item_stack name="0"/>
+			</grid>		
+
+		</rect>
+	</window>
+<!-- Cement Mixer Tools End-->
+<!-- Chemistry -->
+	<window name="windowToolsChemistry" width="228" height="121" panel="Right">
+		<panel style="header.panel">			
+			<sprite style="header.icon" sprite="ui_game_symbol_cookware"/>
+			<label style="header.name" text="TOOLS" text_key="xuiTools" />
+		</panel>
+		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
+			<grid name="inventory" rows="1" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
+			required_tools="beaker,waterFilter" required_tools_only="true">
+				<required_item_stack name="0"/>
+			</grid>		
+		</rect>
+	</window>
+<!-- Chemistry end -->
 	
 </windows>

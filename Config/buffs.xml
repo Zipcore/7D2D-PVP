@@ -125,7 +125,7 @@ built-in buff variables:
 
 <buffs>
 	
-<buff id="bleeding" duration="60" type="bleeding" actions="debuff(fullBuff);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
+<buff id="bleeding" mutex="Resistance" duration="60" type="bleeding" actions="debuff(fullBuff);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 	<modify id="1" stat="health" amount="-1" rate="1"/>
 </buff>
@@ -246,7 +246,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 <buff id="smelly" duration="30" smell="largeSmell" icon="ui_game_symbol_dysentery" name_key="smelly" description_key="smellyDesc" tooltip_key="smellyTooltip"/>
 
-<buff id="infection" mutex="cured,infection1,infection2,infection3,infection4" duration="9000" onexpired="infection1" type="sickness"
+<buff id="infection" mutex="cured,Resistance,infection1,infection2,infection3,infection4" duration="9000" onexpired="infection1" type="sickness"
 	icon="ui_game_symbol_infection" name_key="infection" description_key="infectionDesc" tooltip_key="infectionTooltip" cures="foodHoney,antibiotics,herbalAntibiotics">
 </buff>
 
@@ -299,7 +299,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="speedmodifier" mulValue="0.80"/>			
 </buff>
 
-<buff id="stunned" mutex="stunCooldown" duration="4" actions="increment(@wellness, -0.5, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_stunned" name_key="stunned" description_key="stunnedDesc" tooltip_key="stunnedTooltip">
+<buff id="stunned" mutex="stunCooldown,Resistance" duration="4" actions="increment(@wellness, -0.5, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_stunned" name_key="stunned" description_key="stunnedDesc" tooltip_key="stunnedTooltip">
 	<modify id="0" stat="speedmodifier" mulValue="0.1"/>
 </buff>	
 <buff id="stunCooldown" duration="3" stack="discard"/>
@@ -447,23 +447,34 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 <buff id="radiation" type="sickness" buffif="radiation greater 0" debuffif="radiation equals 0" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip">
 </buff>
-	<buff id="medicalsplint" overrides="brokenLeg,sprainedLeg" name="Splint" type="speedmodifier" overrideicon="true" description="Your leg is splinted." icon="buff_icon_splint">
-		<modify id="0" stat="speedmodifier" setValue="0.60,0.80"/>
-		<modify id="1" buff="brokenLeg" tickrate="20"/>
-		<modify id="2" buff="sprainedLeg" tickrate="20"/>
-	</buff>
+<buff id="medicalsplint" overrides="brokenLeg,sprainedLeg" type="speedmodifier" overrideicon="true" icon="ui_game_symbol_splint" name_key="splintedLeg" description_key="splintedLegDesc" tooltip_key="splintedLegTooltip">
+	<modify id="0" stat="speedmodifier" mulValue="1.2"/>
+	<modify id="1" buff="brokenLeg" tickrate="5"/>
+</buff>
 
-	<buff id="Resistance" duration="60" type="healthup;staminaup" name="Berserk" description="KILL." onexpired="sideeffect" icon="buff_icon_medicine">
+	<buff id="Resistance" duration="60" type="healthup;staminaup" name_key="berserk" description_key="berserkDesc" tooltip_key="berserkTooltip" onexpired="sideeffect" icon="buff_icon_medicine">
 		<modify id="0" stat="stamina" amount="20" rate="1"/>
 		<modify id="1" stat="health" amount="20" rate="1"/>
 
 </buff>
-	<buff id="sideeffect" duration="10" name="Crashing" type="speedmodifier" description="You're crashing hard." icon="buff_icon_stunned">
+	<buff id="sideeffect" duration="10" name_name="crashing" type="speedmodifier" description_key="crashingDesc" tooltip_key="crashingTooltip" icon="buff_icon_stunned">
 		<modify id="0" stat="speedmodifier" setValue="0.1"/>
 	</buff>	
 	<buff id="AcidSplash" stack="stack" stacklimit="2" hitmask="head;body" debuffif="+water > 1" ffcheck="true" name_key="burningSmall" description_key="burningSmallDesc" tooltip_key="burningSmallTooltip" cures="bottledWater" actions="attach(ParticleEffects/p_signal_flareprefab, @impact);damage(6,5,50,8)" icon="ui_game_symbol_fire"/>
 	<buff id="WellnessLoss" duration="2" type="sickness" actions="increment(@wellness, -5, 0, 1, 1)" name_key="Madness" tooltip_key="This can't be real..." description_key="Surviving in this world is slowly eating away at your sanity." icon="ui_game_symbol_food_poisoning">
         <modify id="0" stat="stamina" amount="-3" rate="1"/>
         <modify id="0" stat="speedmodifier" setValue="0.40"/>
-    </buff>	
+    </buff>
+	
+<buff id="aloeLotion" duration="160" stack="extend" type="staminaup" icon="ui_game_symbol_medical"
+	name_key="aloeLotion" description_key="aloeLotionDesc" tooltip_key="aloeLotionTooltip" causes="aloeCream">
+	<modify id="1" stat="coretemp" modifyValue="-5"/>
+</buff>	
+<buff id="peculiarTaste" duration="20" type="sickness" icon="ui_game_symbol_food_poisoning" name_key="peculiarTaste" description_key="peculiarTasteDesc" tooltip_key="peculiarTasteTooltip" causes="mysteryMeat">
+	<modify id="0" stat="stamina" amount="-5" rate="1"/>
+</buff>	 
+<buff id="speedBoost" duration="180" name_key="speedBoost" stack="reset" description_key="speedBoostDesc" tooltip_key="speedBoostTooltip" icon="ui_game_symbol_run">
+<modify id="0" stat="speedmodifier" modifyMaxValue="2.01"/>
+<modify id="1" stat="speedmodifier" modifyValue="1.3"/>
+</buff> 
 </buffs>

@@ -1108,7 +1108,6 @@ Description of Options:
 			<decoration type="block" blockname="campfire" prob=".00004" rotatemax="3"/>
 			<decoration type="block" blockname="cntApacheArtifactChest" prob=".00001" rotatemax="3"/>
 			<decoration type="block" blockname="cntDeadMiner" prob="0.004" rotatemax="7"/>
-			<decoration type="block" blockname="oilRefiner" prob =".00083" rotatemax="3"/>
 		</decorations>
 	</biome>
 	

@@ -39,9 +39,9 @@ then add recipes for those white/red/green metals
 	<drop event="Harvest" name="rockSmall" count="13" />
 	<drop event="Destroy" name="rockSmall" count="12" />
 	<drop event="Destroy" name="scrapIron" count="2" />
-	<drop event="Fall" name="rockSmall" count="50" prob="0"  stick_chance="0" />
-	<drop event="Fall" name="scrapIron" count="4" prob="0"  stick_chance="0" />
-	<drop event="Fall" name="destroyedStone" count="1" prob="0"  stick_chance="0" />
+	<drop event="Fall" name="rockSmall" count="50" prob=".23"  stick_chance="0" />
+	<drop event="Fall" name="scrapIron" count="4" prob=".23"  stick_chance="0" />
+	<drop event="Fall" name="destroyedStone" count="1" prob="0.1"  stick_chance=".5" />
 	<!-- Better to have fewer stacks with higher numbers for performance reasons. -->
 	<!-- With a stick chance fallen resources just get buried and fall off the earth. -->
 	<!-- Could maybe do "0.1" stick but it would quickly make the whole endeavor unfun. Gazz -->
@@ -59,11 +59,11 @@ then add recipes for those white/red/green metals
 	<property name="LPHardnessScale" value="4" />
 	<property name="Map.Color" value="55,79,58" />
 	<drop event="Destroy" name="fertileDirt" />
-	<drop event="Fall" name="fertileDirt" count="1" prob="0.1" stick_chance=".1" />
+	<drop event="Fall" name="fertileDirt" count="1" prob="0.5" stick_chance=".2" />
 	<property name="Group" value="Decor/Miscellaneous" />
 	<property name="CanMobsSpawnOn" value="true" />
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="fertileDirt" />
+		<property name="ToBlock" value="fertileFarmland" />
 		<property name="Item" value="turd" />
 		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="2" />
@@ -81,7 +81,7 @@ then add recipes for those white/red/green metals
 	<drop event="Fall" name="fertileDirt" count="1" prob="0.5" stick_chance=".2" />
 	<property name="CanMobsSpawnOn" value="true" />
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="fertileDirt" />
+		<property name="ToBlock" value="fertileFarmland" />
 		<property name="Item" value="turd" />
 		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="2" />
@@ -97,7 +97,7 @@ then add recipes for those white/red/green metals
 	<property name="Group" value="Decor/Miscellaneous" />
 	<property name="CanMobsSpawnOn" value="true" />
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="fertileDirt" />
+		<property name="ToBlock" value="fertileFarmland" />
 		<property name="Item" value="turd" />
 		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="2" />
@@ -189,7 +189,7 @@ then add recipes for those white/red/green metals
 </block>
 
 <block id="12" name="bedrock">
-    <property name="IsDeveloper" value="true" />
+    	<property name="IsDeveloper" value="true" />
 	<property name="Material" value="Mbedrock" />
 	<property name="Shape" value="Terrain" />
 	<property name="Mesh" value="terrain" />
@@ -226,7 +226,7 @@ then add recipes for those white/red/green metals
 	<property name="Group" value="Decor/Miscellaneous" />
 	<property name="CanMobsSpawnOn" value="true" />
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="fertileDirt" />
+		<property name="ToBlock" value="fertileFarmland" />
 		<property name="Item" value="turd" />
 		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="2" />
@@ -370,7 +370,7 @@ then add recipes for those white/red/green metals
 	<property name="Group" value="Decor/Miscellaneous" />
 	<property name="CanMobsSpawnOn" value="true" />
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="fertileDirt" />
+		<property name="ToBlock" value="fertileFarmland" />
 		<property name="Item" value="turd" />
 		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="2" />
@@ -391,7 +391,7 @@ then add recipes for those white/red/green metals
 	<property name="Group" value="Decor/Miscellaneous" />
 	<property name="CanMobsSpawnOn" value="true" />
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="fertileDirt" />
+		<property name="ToBlock" value="fertileFarmland" />
 		<property name="Item" value="turd" />
 		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="2" />
@@ -506,6 +506,7 @@ then add recipes for those white/red/green metals
 </block>
 <!-- Zombie Bag Drops -->
 <block id="50" name="cntZombie">
+	<property name="CustomIcon" value="cntChest01" />
 	<property name="MaxDamage" value="15" />
 	<property name="Class" value="Loot" />
 	<property name="Material" value="cloth" />
@@ -549,6 +550,10 @@ then add recipes for those white/red/green metals
 <block id="58" name="cntZombieFemale">
 	<property name="Extends" value="cntZombie" />
 	<property name="LootList" value="87" />
+</block>
+<block id="59" name="cntZombieBurnt">
+	<property name="Extends" value="cntZombie" />
+	<property name="LootList" value="88" />
 </block>
 
 <!-- ****************************  Master Material Blocks  **************************** -->
@@ -1737,6 +1742,7 @@ group desc for stuff like metal siding
 </block>
 
 <block id="258" name="plantedBlueberry3Harvest">
+	<property name="Class" value="CropsGrown" />
 	<property name="Material" value="plants" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="BillboardPlant" />
@@ -1791,6 +1797,7 @@ group desc for stuff like metal siding
 </block>
 
 <block id="261" name="plantedPotato3Harvest">
+	<property name="Class" value="CropsGrown" />
 	<property name="Material" value="plants" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Mesh" value="cutoutmoveable" />
@@ -1880,7 +1887,6 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="wood" value="20" /> </property>
 	<property name="DowngradeBlock" value="cntStorageHealthInsecure" />
 	<drop event="Destroy" count="0" />
-	<property name="LPHardnessScale" value="16" />
 	<property name="Group" value="Building" />
 </block>
 
@@ -1947,6 +1953,7 @@ group desc for stuff like metal siding
 	<property name="CanDecorateOnSlopes" value="true" />
 	<property name="IsTerrainDecoration" value="true" />
 	<drop event="Destroy" name="yuccaFibers" count="2" />
+	<drop event="Harvest" name="yuccaFibers" count="2" prob=".4" tool_category="Farm" />
 	<property name="DropScale" value="2" />
 </block>
 
@@ -2930,6 +2937,12 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="Group" value="Building" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="pouredConcreteBlock" />
+		<property name="Item" value="concreteMix" />
+		<property name="ItemCount" value="10" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
 </block>
 
 <block id="386" name="redMetalPillar100">
@@ -3265,7 +3278,21 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="scrapIron" count="1" prob=".7" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 </block>
-	<!-- Free -->
+<block id="422" name="trussingSpike">
+	<property name="DescriptionKey" value="trussingSpikeDesc"/>
+	<property name="Material" value="Mmetal_medium" />
+	<property name="Class" value="Damage" />
+	<property name="Damage" value="3" />
+	<property name="Damage_received" value="15" />
+	<property name="Shape" value="Cone" />
+	<property name="Mesh" value="cutout" />
+	<property name="Texture" value="310" />
+	<property name="Collide" value="movement,melee,rocket" /> <!-- -rocket -->
+	<property class="RepairItems"> <property name="forgedIron" value="4" /> </property>
+	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="Group" value="Building" />
+</block>
 
 <block id="423" name="cntBackpack01">
 	<property name="Class" value="Loot" />
@@ -4155,7 +4182,18 @@ kind of free
 </block>
 	<!--ID 539 Free -->
 	<!--ID 540 Free -->
-	<!--ID 541 Free -->
+<block id="541" name="decorSteel">
+	<property name="Extends" value="steelMaster" />
+	<property name="DescriptionKey" value="decorSteelDesc"/>
+	<property name="Texture" value="241" />
+	<property name="DowngradeBlock" value="rConcreteBlock" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="decorSteelWood" />
+		<property name="Item" value="sprayPaint" />
+		<property name="ItemCount" value="0" />
+		<property name="UpgradeHitCount" value="1" />
+	</property>
+</block>
 
 <block id="542" name="cntBirdnest">
 	<property name="Class" value="Loot" />
@@ -4654,6 +4692,7 @@ kind of free
 	<property name="CanDecorateOnSlopes" value="true" />
 	<property name="IsTerrainDecoration" value="true" />
 	<drop event="Destroy" name="yuccaFibers" count="2" />
+	<drop event="Harvest" name="yuccaFibers" count="2" prob=".4" tool_category="Farm" />
 	<property name="DropScale" value="2" />
 </block>
 
@@ -5048,7 +5087,7 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
-	<property name="LPHardnessScale" value="16" />
+	<property name="LPHardnessScale" value="8" />
 	<property name="DowngradeBlock" value="cntStorageChest" />
 	<property name="Group" value="Basics,Building" />
 	<property name="DescriptionKey" value="cntSecureStorageChestDesc"/>
@@ -5699,6 +5738,7 @@ kind of free
 	<property name="Collide" value="melee" />
 	<property name="CanDecorateOnSlopes" value="true" />
 	<property name="IsTerrainDecoration" value="true" />
+	<property name="CanPickup" value="true" />
 	<drop event="Harvest" name="plantedCotton3Harvest" count="1" prob="1" tool_category="Pluck"/>
 	<drop event="Destroy" name="plantedCotton3Harvest" count="0" prob="1" />
 	<property name="DowngradeBlock" value="plantedCotton1" />
@@ -5721,6 +5761,7 @@ kind of free
 </block>
 
 <block id="718" name="plantedCotton3HarvestLarge"> <!-- farmed cotton -->
+	<property name="Class" value="CropsGrown" />
     	<property name="IsDeveloper" value="true" />
 	<property name="CustomIcon" value="plantedCotton3Harvest" />
 	<property name="Material" value="plants" />
@@ -5733,6 +5774,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<drop event="Harvest" name="plantedCotton3Harvest" count="2" prob="1" tool_category="Pluck"/>
 	<drop event="Destroy" name="plantedCotton3Harvest" count="0" prob="1" />
+	<property name="DowngradeBlock" value="plantedCotton1" />
 </block>
 	<!-- Free -->
 
@@ -5941,7 +5983,73 @@ kind of free
 	<property name="Texture" value="169" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteWedgeTip" /> </property>
 </block>
-	<!-- Free -->
+	<!-- Decor Steel Blocks -->
+<block id="749" name="decorSteelWood">
+	<property name="Extends" value="steelMaster" />
+	<property name="DescriptionKey" value="decorSteelDesc"/>
+	<property name="Texture" value="241" />
+	<property name="DowngradeBlock" value="rConcreteBlock" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="decorSteelRWood" />
+		<property name="Item" value="sprayPaint" />
+		<property name="ItemCount" value="0" />
+		<property name="UpgradeHitCount" value="1" />
+	</property>
+</block>
+<block id="750" name="decorSteelRWood">
+	<property name="Extends" value="decorSteelWood" />
+	<property name="Texture" value="379" />
+	<property name="DowngradeBlock" value="rConcreteBlock" />
+	<property class="UpgradeBlock">	<property name="ToBlock" value="decorSteelRWoodMetal" /> </property>
+</block>
+<block id="751" name="decorSteelRWoodMetal">
+	<property name="Extends" value="decorSteelWood" />
+	<property name="Texture" value="380" />
+	<property name="DowngradeBlock" value="rConcreteBlock" />
+	<property class="UpgradeBlock">	<property name="ToBlock" value="decorSteelScrapIron" /> </property>
+</block>
+<block id="752" name="decorSteelScrapIron">
+	<property name="Extends" value="decorSteelWood" />
+	<property name="Texture" value="307" />
+	<property name="DowngradeBlock" value="rConcreteBlock" />
+	<property class="UpgradeBlock">	<property name="ToBlock" value="decorSteelCobblestone" /> </property>
+</block>
+<block id="753" name="decorSteelCobblestone">
+	<property name="Extends" value="decorSteelWood" />
+	<property name="Texture" value="26" />
+	<property name="DowngradeBlock" value="rConcreteBlock" />
+	<property class="UpgradeBlock">	<property name="ToBlock" value="decorSteelFlagstone" /> </property>
+</block>
+<block id="754" name="decorSteelFlagstone">
+	<property name="Extends" value="decorSteelWood" />
+	<property name="Texture" value="226" />
+	<property name="DowngradeBlock" value="rConcreteBlock" />
+	<property class="UpgradeBlock">	<property name="ToBlock" value="decorSteelConcrete" /> </property>
+</block>
+<block id="755" name="decorSteelConcrete">
+	<property name="Extends" value="decorSteelWood" />
+	<property name="Texture" value="8,8,8,8,8,8" />
+	<property name="DowngradeBlock" value="rConcreteBlock" />
+	<property class="UpgradeBlock">	<property name="ToBlock" value="decorSteelBricks" /> </property>
+</block>
+<block id="756" name="decorSteelRConcrete">
+	<property name="Extends" value="decorSteelWood" />
+	<property name="Texture" value="315" />
+	<property name="DowngradeBlock" value="rConcreteBlock" />
+	<property class="UpgradeBlock">	<property name="ToBlock" value="decorSteelConcreteBricks" /> </property>
+</block>
+<block id="757" name="decorSteelConcreteBricks">
+	<property name="Extends" value="decorSteelWood" />
+	<property name="Texture" value="8,8,12,12,12,12" />
+	<property name="DowngradeBlock" value="rConcreteBlock" />
+	<property class="UpgradeBlock">	<property name="ToBlock" value="decorSteelBricks" /> </property>
+</block>
+<block id="758" name="decorSteelBricks">
+	<property name="Extends" value="decorSteelWood" />
+	<property name="Texture" value="332" />
+	<property name="DowngradeBlock" value="rConcreteBlock" />
+	<property class="UpgradeBlock">	<property name="ToBlock" value="decorSteelWood" /> </property>
+</block>
 
 <block id="759" name="plantedCoffee1">
    	<property name="IsDeveloper" value="true" />
@@ -5980,6 +6088,7 @@ kind of free
 </block>
 
 <block id="761" name="plantedCoffee3Harvest">
+	<property name="Class" value="CropsGrown" />
 	<property name="Material" value="plants" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="BillboardPlant" />
@@ -6043,6 +6152,7 @@ kind of free
 	<property name="Texture" value="362" />
 	<property name="Collide" value="melee" />
 	<property name="IsTerrainDecoration" value="true" />
+	<property name="CanPickup" value="true" />
 	<property name="DowngradeBlock" value="plantedGoldenrod1" />
 	<property name="CraftComponentTimeValue" value="10" />
 	<drop event="Harvest" name="plantedGoldenrod3Harvest" count="1" tool_category="Pluck"/>
@@ -6050,6 +6160,7 @@ kind of free
 </block>
 
 <block id="765" name="plantedGoldenrod3HarvestLarge"> <!-- farmed goldenrod -->
+	<property name="Class" value="CropsGrown" />
     	<property name="IsDeveloper" value="true" />
 	<property name="CustomIcon" value="plantedGoldenrod3Harvest" />
 	<property name="Material" value="plants" />
@@ -6065,7 +6176,12 @@ kind of free
 	<drop event="Destroy" count="0" />
 	<property name="DowngradeBlock" value="plantedGoldenrod1" />
 </block>
-	<!-- Free -->
+<block id="766" name="decorSteelDarkConcrete">
+	<property name="Extends" value="decorSteelWood" />
+	<property name="Texture" value="176" />
+	<property name="DowngradeBlock" value="rConcreteBlock" />
+	<property class="UpgradeBlock">	<property name="ToBlock" value="decorSteelRConcrete" /> </property>
+</block>
 
 <block id="767" name="treeBrownGrassDiagonal">
 	<property name="Class" value="Deadgrass" />
@@ -6079,6 +6195,7 @@ kind of free
 	<property name="CanDecorateOnSlopes" value="true" />
 	<property name="IsTerrainDecoration" value="true" />
 	<drop event="Destroy" name="yuccaFibers" count="2" />
+	<drop event="Harvest" name="yuccaFibers" count="2" prob=".4" tool_category="Farm" />
 	<property name="DropScale" value="2" />
 </block>
 
@@ -6120,6 +6237,7 @@ kind of free
 	<property name="CanDecorateOnSlopes" value="true" />
 	<property name="IsTerrainDecoration" value="true" />
 	<drop event="Destroy" name="yuccaFibers" count="2" />
+	<drop event="Harvest" name="yuccaFibers" count="2" prob=".4" tool_category="Farm" />
 	<property name="DropScale" value="2" />
 </block>
 
@@ -6189,7 +6307,7 @@ kind of free
 	<property name="Material" value="Mcobblestone" />
 	<property name="Texture" value="26" />
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="concreteBlock" />
+		<property name="ToBlock" value="flagstoneBlock" />
 		<property name="Item" value="concreteMix" />
 		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
@@ -6537,7 +6655,7 @@ kind of free
 	<property name="Texture" value="26" />
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="concreteStairs25" />
+		<property name="ToBlock" value="flagstoneStairs25" />
 		<property name="Item" value="concreteMix" />
 		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
@@ -6668,6 +6786,7 @@ kind of free
 </block>
 	<!-- 854 Free -->
 <block id="853" name="plantedYucca3Harvest"> <!-- RWG yucca -->
+	<property name="Class" value="CropsGrown" />
 	<property name="Material" value="plants" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="BillboardPlant" />
@@ -6681,6 +6800,7 @@ kind of free
 </block>
 
 <block id="854" name="plantedAloe3Harvest"> <!-- RWG aloe -->
+	<property name="Class" value="CropsGrown" />
 	<property name="Material" value="plants" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="BillboardPlant" />
@@ -6690,7 +6810,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="DowngradeBlock" value="aloeYoung" />
 	<drop event="Destroy" name="plantedAloe3Harvest" count="0" />
-	<drop event="Harvest" name="plantedAloe3Harvest" count="1"  tool_category="Pluck"/>
+	<drop event="Harvest" name="plantedAloe3Harvest" count="2"  tool_category="Pluck"/>
 </block>
 	<!-- Free -->
 
@@ -6744,6 +6864,7 @@ kind of free
 	<property name="CanDecorateOnSlopes" value="true" />
 	<property name="IsTerrainDecoration" value="true" />
 	<drop event="Destroy" name="yuccaFibers" count="2" />
+	<drop event="Harvest" name="yuccaFibers" count="2" prob=".4" tool_category="Farm" />
 	<property name="DropScale" value="2" />
 </block>
 	<!-- Free -->
@@ -6828,6 +6949,7 @@ kind of free
 	<property name="Collide" value="melee" />
 	<property name="CanDecorateOnSlopes" value="true" />
 	<property name="IsTerrainDecoration" value="true" />
+	<property name="CanPickup" value="true" />
 	<property name="DowngradeBlock" value="ChrysanthemumYoung" />
 	<drop event="Destroy" name="plantedChrysanthemum3Harvest" count="0"/>
 	<drop event="Harvest" name="plantedChrysanthemum3Harvest" count="1" tool_category="Pluck"/>
@@ -6991,6 +7113,7 @@ kind of free
 </block>
 
 <block id="903" name="plantedCornStalk1">
+	<property name="Class" value="CropsGrown" />
 	<property name="Material" value="Mcorn" />
 	<property name="Shape" value="BillboardPlant" />
 	<property name="Mesh" value="cutoutmoveable" />
@@ -7003,6 +7126,7 @@ kind of free
 </block>
 
 <block id="904" name="plantedCornStalk2Harvest">
+	<property name="Class" value="CropsGrown" />
 	<property name="Material" value="Mcorn" />
 	<property name="Shape" value="BillboardPlant" />
 	<property name="Mesh" value="cutoutmoveable" />
@@ -7015,6 +7139,7 @@ kind of free
 </block>
 
 <block id="905" name="plantedCornTop3Harvest">
+	<property name="Class" value="CropsGrown" />
 	<property name="Material" value="Mcorn" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="BillboardPlant" />
@@ -7028,6 +7153,7 @@ kind of free
 </block>
 
 <block id="906" name="grownUpCornTop2"> <!-- used as prefab deco -->
+	<property name="Class" value="CropsGrown" />
 	<property name="Material" value="Mcorn" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="BillboardPlant" />
@@ -7311,10 +7437,19 @@ kind of free
 </block>
 
 <block id="948" name="flagstoneBlock">
-	<property name="Extends" value="stoneToAdobeMaster" />
-	<property name="MaxDamage" value="1500" />
+	<property name="Group" value="Building" />
+	<property name="Material" value="Mflagstone" />
 	<property name="Texture" value="226" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
+	<property class="RepairItems"> <property name="cobblestones" value="6" /> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="concreteBlock" />
+		<property name="Item" value="concreteMix" />
+		<property name="ItemCount" value="10" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+	<drop event="Harvest" name="rockSmall" count="8" />
+	<drop event="Destroy" name="rockSmall" count="8" />
+	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
 	<property name="DescriptionKey" value="flagstoneGroupDesc"/>
 </block>
 
@@ -7584,7 +7719,22 @@ kind of free
 	<property name="Extends" value="awningGreenCNRFull" param1="Shape,Place" />
 	<property name="Texture" value="15" />
 </block>
-	<!-- Free -->
+<block id="998" name="flagstoneRamp">
+	<property name="CustomIcon" value="cabinFlagstoneRamp" />
+	<property name="Material" value="Mflagstone" />
+	<property name="Shape" value="Wedged" />
+	<property name="Texture" value="226" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="concreteRamp" />
+		<property name="Item" value="concreteMix" />
+		<property name="ItemCount" value="10" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+	<property class="RepairItems"> <property name="cobblestones" value="10" /> </property>
+	<drop event="Harvest" name="rockSmall" count="8" />
+	<drop event="Destroy" name="rockSmall" count="8" />
+	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
+</block>
 
 <block id="999" name="cabinShinglesWoodRamp">
 	<property name="Extends" value="woodRamp" />
@@ -7783,8 +7933,24 @@ kind of free
 	<property name="Shape" value="Gable" />
 	<property name="Texture" value="15" />
 </block>
-<!-- free 1033 -->
-
+<block id="1033" name="flagstoneStairs25">
+	<property name="CustomIcon" value="concreteStairs25" />
+	<property name="Material" value="Mflagstone" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="StairsFilled" />
+	<property name="Texture" value="226" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="concreteStairs25" />
+		<property name="Item" value="concreteMix" />
+		<property name="ItemCount" value="10" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+	<property class="RepairItems"> <property name="cobblestones" value="10" /> </property>
+	<drop event="Harvest" name="rockSmall" count="8" />
+	<drop event="Destroy" name="rockSmall" count="8" />
+	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
+</block>
 <block id="1034" name="shinglesAsphaltWhiteWedge">
 	<property name="Extends" value="woodWedge" />
 	<property name="Texture" value="229,54,52,52,52,52" />
@@ -7836,7 +8002,7 @@ kind of free
 	<property name="Model" value="wedge" />
 	<property name="Texture" value="26" />
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="concreteRamp" />
+		<property name="ToBlock" value="flagstoneRamp" />
 		<property name="Item" value="concreteMix" />
 		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
@@ -9828,7 +9994,7 @@ kind of free
 	<property name="Model" value="LootContainers/shopping_basket" param1="main_mesh" />
 	<property name="CustomIcon" value="shoppingBasketEmpty" />
 	<property name="LootList" value="58" />
-	<drop event="Harvest" name="shoppingBasketItem" count="1" prob="1" tool_category="Disassemble" />
+	<drop event="Destroy" name="shoppingBasketItem" count="1" />
 </block>
 
 <block id="1350" name="woodShinglesWedge">
@@ -11587,6 +11753,7 @@ kind of free
 <block id="1563" name="workbench">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="metal" />
+	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="Entities/Crafting/workbenchPrefab" />
 	<property name="MultiBlockDim" value="2,2,1" />
@@ -12232,13 +12399,27 @@ kind of free
 	<property name="Model" value="corner_round1m" />
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property name="Texture" value="241" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="rWoodCNRRound" />
+		<property name="Item" value="carpenterKit" />
+		<property name="ItemCount" value="1" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
 </block>
 <block id="1781" name="flagstoneCNRRound">
 	<property name="Extends" value="brickNoUpgradeMaster" />
+	<property name="Material" value="Mflagstone" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="corner_round1m" />
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property name="Texture" value="226" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="concreteCNRRound" />
+		<property name="Item" value="concreteMix" />
+		<property name="ItemCount" value="10" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+	<property name="DowngradeBlock" value="cobblestoneCNRRound" />
 </block>
 <block id="1782" name="cobblestoneCNRRound">
 	<property name="Extends" value="brickNoUpgradeMaster" />
@@ -12246,6 +12427,13 @@ kind of free
 	<property name="Model" value="corner_round1m" />
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property name="Texture" value="26" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="flagstoneCNRRound" />
+		<property name="Item" value="concreteMix" />
+		<property name="ItemCount" value="10" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+	<property name="DowngradeBlock" value="woodCNRRound" />
 </block>
 <block id="1783" name="concreteCNRRound">
 	<property name="Extends" value="concreteNoUpgradeMaster" />
@@ -12253,6 +12441,93 @@ kind of free
 	<property name="Model" value="corner_round1m" />
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property name="Texture" value="8,8,8,8,8,8" />
+	<property name="DowngradeBlock" value="flagstoneCNRRound" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="rConcreteCNRRound" />
+		<property name="Item" value="concreteMix" />
+		<property name="ItemCount" value="10" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+</block>
+<block id="1784" name="rWoodCNRRound">
+	<property name="Extends" value="woodNoUpgradeMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="corner_round1m" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property name="Material" value="wood+wood" />
+	<property name="Texture" value="379" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="rWoodMetalCNRRound" />
+		<property name="Item" value="scrapIron" />
+		<property name="ItemCount" value="4" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+	<property name="DowngradeBlock" value="woodCNRRound" />
+</block>
+<block id="1785" name="rWoodMetalCNRRound">
+	<property name="Extends" value="woodNoUpgradeMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="corner_round1m" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property name="Material" value="metal" />
+	<property name="Texture" value="380" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="scrapMetalCNRRound" />
+		<property name="Item" value="scrapIron" />
+		<property name="ItemCount" value="8" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+	<property name="DowngradeBlock" value="rWoodCNRRound" />
+</block>
+<block id="1786" name="scrapMetalCNRRound">
+	<property name="Extends" value="woodNoUpgradeMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="corner_round1m" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property name="Material" value="Mmetal_medium" />
+	<property name="Texture" value="307" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="rScrapMetalCNRRound" />
+		<property name="Item" value="scrapIron" />
+		<property name="ItemCount" value="8" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+	<property name="DowngradeBlock" value="rWoodMetalCNRRound" />
+</block>
+<block id="1787" name="rScrapMetalCNRRound">
+	<property name="Extends" value="woodNoUpgradeMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="corner_round1m" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property name="Material" value="Mmetal_medium" />
+	<property name="Texture" value="352" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="concreteCNRRound" />
+		<property name="Item" value="concreteMix" />
+		<property name="ItemCount" value="10" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+	<property name="DowngradeBlock" value="scrapMetalCNRRound" />
+</block>
+<block id="1788" name="rConcreteCNRRound">
+	<property name="Extends" value="rConcreteMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="corner_round1m" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelCNRRound" /> </property>
+	<property name="DowngradeBlock" value="rScrapMetalCNRRound" />
+</block>
+<block id="1789" name="steelCNRRound">
+	<property name="Material" value="Msteel" />
+	<property name="MaxDamage" value="10000" />
+	<property name="Texture" value="355,355,356,356,356,356" />
+	<property class="RepairItems"> <property name="forgedSteel" value="10" /> </property>
+	<drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="corner_round1m" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property name="DowngradeBlock" value="rConcreteCNRRound" />
 </block>
 	<!-- Free -->
 
@@ -12532,6 +12807,39 @@ kind of free
 	<drop event="Destroy" count="0" />
 </block>
 	<!-- Bridge and Hiddenwall Mod -->
+	<block id="1922" name="hideBlockConcrete">
+		<property name="MaxDamage" value="6000" />
+		<property name="Material" value="Mconcrete" />
+		<property name="Texture" value="8,8,8,8,8,8" />
+		<property name="CustomIcon" value="Concrete_Hidden_Door" />
+		<drop event="Destroy" name="hiddenConcreteDoor" count="1" prob="1" />
+		<property name="DowngradeBlock" value="solidWoodFrameBlock" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="MultiBlockDim" value="1,2,1" />
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="hiddenConcreteDoor"/>
+			<property name="Item" value="Remote"/>
+			<property name="ItemCount" value="0"/>
+			<property name="UpgradeHitCount" value="1"/>
+		</property>
+	</block>
+	<block id="1923" name="hiddenConcreteDoor">
+		<property name="MaxDamage" value="6000" />
+		<property name="CustomIcon" value="Concrete_Hidden_Door" />
+		<property name="DescriptionKey" value="hiddenDoorDesc"/>
+		<property name="Material" value="Mconcrete" />
+		<property name="Texture" value="8,8,8,8,8,8" />
+		<drop event="Destroy" name="hiddenConcreteDoor" count="1" prob="1" />
+		<property name="DowngradeBlock" value="solidWoodFrameBlock" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="MultiBlockDim" value="2,2,1" />
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="hideBlockConcrete"/>
+			<property name="Item" value="Remote"/>
+			<property name="ItemCount" value="0"/>
+			<property name="UpgradeHitCount" value="1"/>
+		</property>
+	</block>
 	<block id="1924" name="hideBlockWood">
 		<property name="MaxDamage" value="800" />
 		<property name="CustomIcon" value="hiddenWoodDoor" />
@@ -12569,7 +12877,7 @@ kind of free
 		<property name="DescriptionKey" value="bridgeDesc"/>
 		<property name="Material" value="wood_weak" />
 		<property name="Texture" value="241" />
-		<property name="MultiBlockDim" value="3,1,1" />
+		<property name="MultiBlockDim" value="3,5,1" />
 		<property name="Place" value="TowardsPlacer" />
 		<drop event="Destroy" name="bridgeWooden" count="1" />
 		<property class="UpgradeBlock">
@@ -12660,10 +12968,9 @@ kind of free
 	<block id="1932" name="AutoWall_Reinforced_Concrete">
 		<property name="DescriptionKey" value="autoWallDesc"/>
 		<property name="Class" value="PlantGrowing" />
+		<property name="MaxDamage" value="1500" />
 		<property name="Material" value="Mconcrete" />
 		<property name="Texture" value="176,176,186,186,186,186" />
-		<property name="Mesh" value="cutout" />
-		<property name="IsTerrainDecoration" value="true" />
 		<property class="PlantGrowing">
 			<property name="FertileLevel" value="0" />
 			<property name="Next" value="pouredConcreteMaster" />
@@ -12734,7 +13041,19 @@ kind of free
 		<property name="LiquidStatic" value="asphalt" />
 	</block>
 	<!-- Workstation Mod -->
-	<!-- 1940-1943 Reserved -->
+	<!-- 1940-1942 Reserved -->
+	<block id="1943" name="workstationDecor">
+		<property name="Extends" value="woodTable" />
+		<property name="Texture" value="214,217,54,54,54,54" />
+		<property name="MaxDamage" value="50" />
+		<property name="StabilitySupport" value="false" />
+		<property name="DescriptionKey" value="workstationDecorDesc"/>
+		<property name="Class" value="Workstation" />
+		<property class="Workstation">
+			<property name="Modules" value="output,input"/>
+		</property>
+		<property name="Group" value="Building" />
+	</block>
 	<block id="1944" name="workstationMerchant">
 		<property name="MaxDamage" value="50" />
 		<property name="StabilitySupport" value="false" />
@@ -12830,22 +13149,20 @@ kind of free
 			<property name="wood" value="10" />
 		</property>
 	</block>
-	<block id="1949" name="oilRefiner">
+	<block id="1949" name="workstationChemistry">
 		<property name="StabilitySupport" value="false" />
-		<property name="DescriptionKey" value="oilRefinerDesc"/>
+		<property name="DescriptionKey" value="workstationChemistryDesc"/>
 		<property name="Material" value="snare" />
-		<property name="Texture" value="355,9,9,9,9,9" />
+		<property name="Texture" value="78,9,9,355,9,9" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="counter_sink" />
-		<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
-		<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0"  stick_chance="1" />
-		<property name="Group" value="Tools/Traps" />
+		<property name="Group" value="Basics" />
 		<property name="Class" value="Workstation" />
 		<property class="Workstation">
 			<property name="Modules" value="output,input"/>
 		</property>
 		<property class="RepairItems">
-			<property name="forgedSteel" value="5" />
+			<property name="wood" value="10" />
 		</property>
 	</block>
 	<!-- DoorBuster -->
@@ -13094,20 +13411,24 @@ kind of free
 		</property>
 	</block>
 	<block id="1971" name="workingGranitSink">
-		<property name="DescriptionKey" value="WorkingSinkDesc"/>
-		<property name="Extends" value="cntGraniteSink" />
-		<property name="CustomIcon" value="cntGraniteSink" />
-		<property name="Class" value="SecureLoot" />
-		<property name="LootList" value="130" />
-	<property name="LPHardnessScale" value="16" />
+	<property name="DescriptionKey" value="WorkingSinkDesc"/>
+	<property name="CustomIcon" value="cntGraniteSink" />	
+	<property name="Class" value="SecureLoot" />
+	<property name="LootList" value="130" />
+	<property name="Material" value="metal" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="counter_sink" />
+	<property name="Texture" value="373,228,262,228,228,228" />
+	<drop event="Destroy" name="scrapIron" count="1" prob="1" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble" />
+	<drop event="Harvest" name="scrapIron" count="2" tool_category="Disassemble" />
+	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	</block>
 	<block id="1972" name="workingCabinetSink">
-		<property name="DescriptionKey" value="WorkingSinkDesc"/>
-		<property name="Extends" value="cntCabinetOldSink" />
+		<property name="Extends" value="workingGranitSink" />
 		<property name="CustomIcon" value="cntCabinetOldSink" />
-		<property name="Class" value="SecureLoot" />
-		<property name="LootList" value="130" />
-	<property name="LPHardnessScale" value="16" />
+		<property name="Texture" value="374,84,79,82,82,82" />
 	</block>
 	<!-- Class Mod -->
 	<block id="1973" name="Class - Hunter (Locked)">
@@ -13619,9 +13940,9 @@ kind of free
 		<property name="Model" value="Traps/trap_mine_tin" param1="main_mesh" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="Explosion.ParticleIndex" value="1" />
+		<property name="CanPickup" value="false" />
 		<!-- which prefab/particle is used -->
 		<property name="Explosion.RadiusEntities" value="4" />
-		<property name="CanPickup" value="false" />
 		<!-- damage radius for entities -->
 		<property name="DropScale" value="3" />
 		<drop event="Destroy" count="0" />
@@ -13781,7 +14102,7 @@ kind of free
 		<property name="Model" value="Entities/Trees/Maple20Prefab" />
 		<property name="ParticleOnDeath" value="treeGib_burnt" />
 		<property name="ModelOffset" value="0,-1.2,0" />
-		<drop event="Destroy" name="Apple" count="4,6" prob="0.6" />
+		<drop event="Destroy" name="Apple" count="1,2" prob="0.6" />
 		<drop event="Harvest" name="Apple" count="2,3" tool_category="Pluck"/>
 		<property name="UpwardsCount" value="3" />
 		<property name="DowngradeBlock" value="appleTreeEmpty" />
@@ -13923,6 +14244,7 @@ kind of free
         <property name="Group" value="Food/Cooking" />
   </block>
 	<block id="2032" name="LeekPlant">
+	<property name="Class" value="CropsGrown" />
     <property name="Material" value="leaves" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="BillboardPlant" />
@@ -13933,7 +14255,6 @@ kind of free
 	<property name="DowngradeBlock" value="seedLeek" />
     <drop event="Destroy" name="Leek" count="0" />
     <drop event="Harvest" name="Leek" tool_category="Pluck" count="2" />
-    <drop event="Harvest" name="LeekPlant" tool_category="Shovel" count="1" />
   </block>
 	<block id="2033" name="seedWheat">
     <property name="Class" value="PlantGrowing" />
@@ -13943,7 +14264,6 @@ kind of free
     <property name="Texture" value="393" />
     <property name="Collide" value="melee" />
     <property name="IsTerrainDecoration" value="true" />
-    
     <property class="PlantGrowing">
       <property name="Next" value="WheatPlant" />
       <property name="GrowthRate" value="180" />
@@ -13953,6 +14273,7 @@ kind of free
         <property name="Group" value="Food/Cooking" />
   </block>
 	<block id="2034" name="WheatPlant">
+	<property name="Class" value="CropsGrown" />
     <property name="Material" value="plants" />
     <property name="Shape" value="Grass" />
     <property name="Mesh" value="grass" />
@@ -13964,7 +14285,6 @@ kind of free
 	<property name="DowngradeBlock" value="seedWheat" />
     <drop event="Destroy" name="Wheat" count="0" />
     <drop event="Harvest" name="Wheat" tool_category="Pluck" count="3" />
-    <drop event="Harvest" name="WheatPlant" tool_category="Shovel" count="1" />
         <property name="Group" value="Food/Cooking" />
   </block>  
 	<block id="2035" name="seedGrape">
@@ -13985,6 +14305,7 @@ kind of free
         <property name="Group" value="Food/Cooking" />
   </block>
 	<block id="2036" name="GrapeVine">
+	<property name="Class" value="CropsGrown" />
     <property name="Material" value="plants" />
     <property name="Shape" value="ModelEntity" />
     <property name="Texture" value="241" />
@@ -13992,7 +14313,6 @@ kind of free
     <property name="Model" value="Entities/Decor/hangingMossPrefab" />
     <drop event="Destroy" name="Grapes" count="0" />
     <drop event="Harvest" name="Grapes" tool_category="Pluck" count="2" />
-    <drop event="Harvest" name="GrapeVine" tool_category="Shovel" count="1" />
 	<property name="Group" value="Food/Cooking" />
 	<property name="DowngradeBlock" value="seedGrape" />
   </block>  
@@ -14014,6 +14334,7 @@ kind of free
         <property name="Group" value="Food/Cooking" />
   </block>
 	<block id="2038" name="HopsPlant">
+	<property name="Class" value="CropsGrown" />
     <property name="Material" value="Mcorn" />
     <property name="Shape" value="BillboardPlant" />
     <property name="Mesh" value="cutoutmoveable" />
@@ -14021,7 +14342,6 @@ kind of free
     <property name="Collide" value="rockets,melee" />
     <drop event="Destroy" name="Hops" count="0" />
     <drop event="Harvest" name="Hops" tool_category="Pluck" count="2" />
-    <drop event="Harvest" name="HopsPlant" tool_category="Shovel" count="1" />
 	<property name="DowngradeBlock" value="seedHops" />
   </block>
 	<block id="2039" name="plantSeed">

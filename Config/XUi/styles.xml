@@ -148,7 +148,7 @@
 		<style_entry name="select_color" value="[red]"/>
 		<style_entry name="press_color" value="[limeGreen]"/>
 		<style_entry name="final_pressed_color" value="[lightGrey]"/>
-		<style_entry name="background_color" value="56, 55, 55"/>
+		<style_entry name="background_color" value="[darkGrey_half_alpha]"/>
 		<style_entry name="highlight_color" value="[red]"/>
 		<style_entry name="holding_color" value="[red]"/>
 		<style_entry name="width" value="72"/>
