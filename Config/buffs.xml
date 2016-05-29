@@ -299,7 +299,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="speedmodifier" mulValue="0.80"/>			
 </buff>
 
-<buff id="stunned" mutex="stunCooldown,Resistance" duration="4" actions="increment(@wellness, -0.5, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_stunned" name_key="stunned" description_key="stunnedDesc" tooltip_key="stunnedTooltip">
+<buff id="stunned" mutex="stunCooldown,Resistance,speedBoost" duration="4" actions="increment(@wellness, -0.5, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_stunned" name_key="stunned" description_key="stunnedDesc" tooltip_key="stunnedTooltip">
 	<modify id="0" stat="speedmodifier" mulValue="0.1"/>
 </buff>	
 <buff id="stunCooldown" duration="3" stack="discard"/>
@@ -474,7 +474,8 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="stamina" amount="-5" rate="1"/>
 </buff>	 
 <buff id="speedBoost" duration="180" name_key="speedBoost" stack="reset" description_key="speedBoostDesc" tooltip_key="speedBoostTooltip" icon="ui_game_symbol_run">
-<modify id="0" stat="speedmodifier" modifyMaxValue="1.31"/>
-<modify id="1" stat="speedmodifier" modifyValue="1.15"/>
+	<!-- <modify id="0" stat="speedmodifier" modifyMaxValue="1.31"/>
+	<modify id="1" stat="speedmodifier" modifyValue="1.15"/> -->
+	<modify id="0" stat="stamina" amount="3" rate="1"/>
 </buff> 
 </buffs>
