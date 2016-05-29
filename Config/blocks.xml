@@ -2885,7 +2885,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Traps/dynamite_bundle" param1="main_mesh" />
-	<property name="CanPickup" value="false" />
+	<property name="CanPickup" value="true" />
 	<property class="Explosion">
 	<property name="ParticleIndex" value="4" /> <!-- which prefab/particle is used -->
 	<property name="RadiusBlocks" value="5" /> <!-- damage radius for blocks -->
@@ -13873,7 +13873,7 @@ kind of free
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="Traps/dynamite_bundle" param1="main_mesh" />
-		<property name="CanPickup" value="false" />
+		<property name="CanPickup" value="true" />
 		<property class="Explosion">
 			<property name="ParticleIndex" value="4" />
 			<!-- which prefab/particle is used -->
