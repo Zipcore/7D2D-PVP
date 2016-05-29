@@ -13892,9 +13892,9 @@ kind of free
 	</block>
 	<block id="2003" name="trapSteelSpike">
 		<property name="DescriptionKey" value="trapSteelSpikeDesc"/>
-		<property name="MaxDamage" value="2000" />
+		<property name="MaxDamage" value="4000" />
 		<property name="Class" value="Damage" />
-		<property name="Damage" value="10" />
+		<property name="Damage" value="25" />
 		<property name="Damage_received" value="38" />
 		<property name="Material" value="Msteel" />
 		<property name="Shape" value="Cone" />
@@ -13915,10 +13915,10 @@ kind of free
 	</block>
 	<block id="2004" name="trapSteelFireSpike">
 		<property name="DescriptionKey" value="trapSteelFireSpikeDesc"/>
-		<property name="MaxDamage" value="2000" />
+		<property name="MaxDamage" value="4000" />
 		<property name="BuffsWhenWalkedOn" value="burningSmall" />
 		<property name="Class" value="Damage" />
-		<property name="Damage" value="10" />
+		<property name="Damage" value="25" />
 		<property name="Damage_received" value="45" />
 		<property name="Material" value="Msteel" />
 		<property name="Shape" value="Cone" />
