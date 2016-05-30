@@ -1372,7 +1372,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="FuelValue" value="24" />
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee" />
-		<property name="Delay" value="2.1" />
+		<property name="Delay" value="1.1" />
 		<property name="Range" value="2" />
 		<property name="Sphere" value="0.2" />
 		<property name="Block_range" value="4" />
@@ -1387,7 +1387,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="MakeFertile" />
-		<property name="Delay" value="2.1" />
+		<property name="Delay" value="1.1" />
 		<property name="Block_range" value="4" />
 		<property name="DamageBlock" value="1" />
 		<property name="Sound_start" value="swoosh" />
