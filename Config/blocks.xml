@@ -3282,7 +3282,7 @@ group desc for stuff like metal siding
 	<property name="DescriptionKey" value="trussingSpikeDesc"/>
 	<property name="Material" value="Mmetal_medium" />
 	<property name="Class" value="Damage" />
-	<property name="Damage" value="3" />
+	<property name="Damage" value="7" />
 	<property name="Damage_received" value="15" />
 	<property name="Shape" value="Cone" />
 	<property name="Mesh" value="cutout" />
@@ -3745,7 +3745,22 @@ kind of free
 	<drop event="Harvest" name="cloth" count="2" />
 	<drop event="Destroy" count="0" />
 </block>
-	<!-- Free -->
+
+<block id="467" name="trussingWallSpike">
+	<property name="DescriptionKey" value="trussingWallSpikeDesc"/>
+	<property name="Material" value="Mmetal_medium" />
+	<property name="Class" value="Damage" />
+	<property name="Damage" value="5" />
+	<property name="Damage_received" value="15" />
+	<property name="Shape" value="Pyramid" />
+	<property name="Mesh" value="cutout" />
+	<property name="Texture" value="310" />
+	<property name="Collide" value="movement,melee,rocket" /> <!-- -rocket -->
+	<property class="RepairItems"> <property name="forgedIron" value="4" /> </property>
+	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="Group" value="Building" />
+</block>
 
 <block id="468" name="driftwood">
 	<property name="Material" value="wood_weak" />

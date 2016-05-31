@@ -36,21 +36,21 @@
 		</window_group>
 		
 		<window_group name="workstation_cementMixer" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowToolsCementMixer" />
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<window name="windowToolsCementMixer" />
 		</window_group>		
 		
 		<window_group name="workstation_workbench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowToolsWorkbench" />
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<window name="windowToolsWorkbench" />
 		</window_group>				
 		
 		<window_group name="looting" left_panel_valign_top="false" controller="XUiC_LootWindowGroup">
@@ -221,12 +221,12 @@
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		<window_group name="workstation_workstationDecor" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowToolsDecorWorkbench" />
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<window name="windowToolsDecorWorkbench" />
 		</window_group>
 		<window_group name="workstation_workstationChemistry" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>

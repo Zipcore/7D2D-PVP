@@ -2485,8 +2485,8 @@ InfectionDartDesc,items,Item Gun,,When fired from a Tranquilizer this dart can i
 ChemicalDart,items,Item Gun,,Chemical Dart,,
 ChemicalDartDesc,items,Item Gun,,When fired from a Tranquilizer this dart splashes chemical acid on survivors or zombies.,,
 TranquilizerDesc,items,Item Gun,,This tranquilizer can be loaded up with darts to either heal or damage other survivors from afar.,,
-BulletHPDesc,items,Item Gun,,These bullets have had their points hollowed out to maximize impact damage.,,
-BulletINCDesc,items,Item Gun,,These bullets have been modified to ignite the target on fire on impact.,,
+BulletHPDesc,items,Item Gun,,"These bullets have had their points hollowed out to maximize impact damage. (Damage Stat Display is not accurate)",,
+BulletINCDesc,items,Item Gun,,"These bullets have been modified to ignite the target on fire on impact. (Damage Stat Display is not accurate)",,
 SiegeShellDesc,items,Item Gun,,These shotgun shells have been modified to maximize block damage at the cost of entity damage.,,
 ShotgunShellINCDesc,items,Item Gun,,These shotgun shells have been modified to ignite the target on fire on impact.,,
 BlunderbussShredderDesc,items,Item Gun,,This blunderbuss ammo has been mixed with sharp shards to increase its bleed chance and damage.,,
@@ -3478,6 +3478,10 @@ fiberPulpDesc,items,Item,,This pulp can be used in the workbench with a paper ra
 trussingSpike,blocks,Traps,,Trussing Spike,,
 trussingSpikeDesc,blocks,Traps,,"These spike traps can damage, cripple, even kill enemies. Place them using the secondary action. They can't be upgraded and can be shot through with weapons.",,
 
+trussingWallSpike,blocks,Traps,,Trussing Wall Spike,,
+trussingWallSpikeDesc,blocks,Traps,,"These spike traps can damage, cripple, even kill enemies. Place them using the secondary action. They can't be upgraded and can be shot through with weapons. This wall variant can be mounted on a wall.",,
+
+
 challengeKickz,items,Zombie Challenge Note,,Kickz Shoe Sponsership,,
 challengeKickzDesc,items,Zombie Challenge Note,,"The slow do not survive.",,
 
@@ -3487,3 +3491,6 @@ waterFilterDesc,items,Item,,"This can be used in the chemistry station for water
 waterFilter,items,Item,,Water Filter,,
 workstationChemistry,blocks,Block Building,,Chemistry Station,,
 workstationChemistryDesc,blocks,Block Building,,"This workstation can be used to mix various chemicals or perform other science-related tasks.",,
+
+tunaSandwich,items,Item Food,,Tunafish Sandwich,,
+fishPie,items,Item Food,,Fish Pie,,
